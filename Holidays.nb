@@ -1,0 +1,49 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      1073,         39]
+NotebookOptionsPosition[       720,         25]
+NotebookOutlinePosition[      1124,         41]
+CellTagsIndexPosition[      1081,         38]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Holidays", "Section",
+ CellChangeTimes->{{3.8654558735654287`*^9, 
+  3.865455874761962*^9}},ExpressionUUID->"de5210c5-4c99-46c8-abc4-\
+1ccff3e8c1d2"]
+},
+WindowSize->{1428., 747.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4c838b94-c2c9-4ddd-a0ee-52d183b92b34"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 155, 3, 67, "Section",ExpressionUUID->"de5210c5-4c99-46c8-abc4-1ccff3e8c1d2"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
