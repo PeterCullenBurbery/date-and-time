@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     28383,        723]
-NotebookOptionsPosition[     27260,        696]
-NotebookOutlinePosition[     27667,        712]
-CellTagsIndexPosition[     27624,        709]
+NotebookDataLength[     30167,        753]
+NotebookOptionsPosition[     29172,        729]
+NotebookOutlinePosition[     29578,        745]
+CellTagsIndexPosition[     29535,        742]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -656,46 +656,79 @@ moon on or after 21 March\>\""}], ",",
      RowBox[{
      "\"\<Washington's Birthday\>\"", "->", 
       "\"\<third Monday in February\>\""}], ",", 
-     RowBox[{"\"\<Memorial Day\>\"", "->", "\"\<last Monday in May\>\""}]}], 
+     RowBox[{"\"\<Memorial Day\>\"", "->", "\"\<last Monday in May\>\""}], 
+     ",", 
+     RowBox[{"\"\<Labor Day\>\"", "->", "\"\<first Monday in September\>\""}],
+      ",", 
+     RowBox[{
+     "\"\<Columbus Day\>\"", "->", "\"\<second Monday in October\>\""}], ",", 
+     RowBox[{
+     "\"\<Thanksgiving\>\"", "->", "\"\<fourth Thursday in November\>\""}], 
+     ",", 
+     RowBox[{"\"\<Mothers Day\>\"", "->", "\"\<2nd Sunday of May\>\""}], ",", 
+     RowBox[{"\"\<fathers day\>\"", "->", "\"\<third Sunday in June\>\""}], 
+     ",", 
+     RowBox[{"\"\<Ash Wednesday\>\"", "->", "\"\<40 days before Easter\>\""}],
+      ",", 
+     RowBox[{
+     "\"\<Mardi Gras\>\"", "->", "\"\<Tuesday before Ash Wednesday\>\""}], 
+     ",", 
+     RowBox[{"\"\<Palm Sunday\>\"", "->", "\"\<Sunday before Easter\>\""}], 
+     ",", 
+     RowBox[{
+     "\"\<Good Friday\>\"", "->", 
+      "\"\<Friday after Palm Sunday and before Easter\>\""}], ",", 
+     RowBox[{"\"\<Arbor Day\>\"", "->", "\"\<last Friday in April\>\""}]}], 
     "|>"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.865453984141142*^9, 3.865454023647084*^9}, {
   3.8654541036796975`*^9, 3.8654541842442865`*^9}, {3.8654542506686454`*^9, 
   3.865454265247711*^9}, {3.865454382638654*^9, 3.865454411484867*^9}, {
-  3.8654544577039595`*^9, 
-  3.865454498978294*^9}},ExpressionUUID->"e286299f-eaa5-48fd-99f9-\
+  3.8654544577039595`*^9, 3.865454498978294*^9}, {3.865454800469161*^9, 
+  3.86545488473355*^9}, {3.865455055383765*^9, 3.8654550628021426`*^9}, {
+  3.8654551379558597`*^9, 3.865455152528462*^9}, {3.865455330013085*^9, 
+  3.86545544500222*^9}, {3.8654555486738024`*^9, 
+  3.8654555615263977`*^9}},ExpressionUUID->"e286299f-eaa5-48fd-99f9-\
 895ee578f02f"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"datesthatdependondates", "=", 
-  RowBox[{"<|", 
-   RowBox[{
-    RowBox[{"\"\<New Years Day\>\"", "->", "\"\<January 1 each year\>\""}], 
-    ",", 
+ RowBox[{
+  RowBox[{"datesthatdependondates", "=", 
+   RowBox[{"<|", 
     RowBox[{
-    "\"\<Juneteenth National Independence Day\>\"", "->", 
-     "\"\<June 19 to celebrate the emancipation of slaves in the United \
-States\>\""}]}], "|>"}]}]], "Input",
+     RowBox[{"\"\<New Years Day\>\"", "->", "\"\<January 1 each year\>\""}], 
+     ",", 
+     RowBox[{
+     "\"\<Juneteenth National Independence Day\>\"", "->", 
+      "\"\<June 19 to celebrate the emancipation of slaves in the United \
+States\>\""}], ",", 
+     RowBox[{
+     "\"\<Independence Day\>\"", "->", 
+      "\"\<July 4 the day the Declaration of Independence was signed\>\""}], 
+     ",", 
+     RowBox[{"\"\<Veterans Day\>\"", "->", "\"\<November 11\>\""}], ",", 
+     RowBox[{"\"\<Christmas Day\>\"", "->", "\"\<December 25\>\""}], ",", 
+     RowBox[{"\"\<Halloween\>\"", "->", "\"\<October 31\>\""}], ",", 
+     RowBox[{"\"\<Valentines Day\>\"", "->", "\"\<February 14\>\""}], ",", 
+     RowBox[{"\"\<Saint Patricks Day\>\"", "->", "\"\<March 17\>\""}], ",", 
+     RowBox[{"\"\<Epiphany\>\"", "->", "\"\<January 6\>\""}], ",", 
+     RowBox[{"\"\<Orthodox Christmas\>\"", "->", "\"\<January 7\>\""}], ",", 
+     RowBox[{"\"\<Christmas Eve\>\"", "->", "\"\<December 24\>\""}], ",", 
+     RowBox[{"\"\<Groudhog Day\>\"", "->", "\"\<February 2nd\>\""}], ",", 
+     RowBox[{"\"\<Cinco de Mayo\>\"", "->", "\"\<May 5\>\""}]}], "|>"}]}], 
+  ";"}]], "Input",
  CellChangeTimes->{{3.8654542700811534`*^9, 3.8654542705655203`*^9}, {
   3.865454342495861*^9, 3.8654543682511396`*^9}, {3.8654545049125032`*^9, 
-  3.865454533129928*^9}, {3.8654547285641994`*^9, 3.8654547287536106`*^9}},
- CellLabel->"In[53]:=",ExpressionUUID->"03bde2c1-09a5-4a61-a8db-feba17680c98"],
-
-Cell[BoxData[
- RowBox[{"\[LeftAssociation]", 
-  RowBox[{
-   RowBox[{"\<\"New Years Day\"\>", 
-    "\[Rule]", "\<\"January 1 each year\"\>"}], ",", 
-   RowBox[{"\<\"Juneteenth National Independence Day\"\>", 
-    "\[Rule]", "\<\"June 19 to celebrate the emancipation of slaves in the \
-United States\"\>"}]}], "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{3.8654547310259576`*^9},
- CellLabel->"Out[53]=",ExpressionUUID->"6b17087d-4360-4566-afef-9bf9bcc92f48"]
-}, Open  ]]
+  3.865454533129928*^9}, {3.8654547285641994`*^9, 3.865454732956459*^9}, {
+  3.86545476658538*^9, 3.8654547976090555`*^9}, {3.86545488895201*^9, 
+  3.8654549249166822`*^9}, {3.8654551134351196`*^9, 3.8654551223280296`*^9}, {
+  3.865455167418993*^9, 3.86545524157176*^9}, {3.8654554615078773`*^9, 
+  3.8654555007085776`*^9}, {3.865455544385561*^9, 3.8654555454792285`*^9}, {
+  3.865455585085224*^9, 
+  3.865455594466837*^9}},ExpressionUUID->"03bde2c1-09a5-4a61-a8db-\
+feba17680c98"]
 },
-WindowSize->{581.25, 654.},
-WindowMargins->{{Automatic, 48}, {Automatic, 6.75}},
+WindowSize->{1440., 747.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"8545c498-d0c7-4a7e-a07e-6c879c6cdace"
@@ -711,20 +744,17 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[561, 20, 2460, 46, 314, "Input",ExpressionUUID->"7e1e0284-662d-4357-bf63-b6a1ff3199e9"],
+Cell[561, 20, 2460, 46, 162, "Input",ExpressionUUID->"7e1e0284-662d-4357-bf63-b6a1ff3199e9"],
 Cell[CellGroupData[{
 Cell[3046, 70, 210, 3, 28, "Input",ExpressionUUID->"d8a61b8d-7762-4505-9013-073113fbc61a"],
-Cell[3259, 75, 20752, 535, 889, "Output",ExpressionUUID->"bec93532-b4da-4c3f-88e5-0d82fdf5e700"]
+Cell[3259, 75, 20752, 535, 309, "Output",ExpressionUUID->"bec93532-b4da-4c3f-88e5-0d82fdf5e700"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[24048, 615, 280, 4, 28, "Input",ExpressionUUID->"13cdcd8a-8fe5-4aec-ab8b-9b3578342867"],
 Cell[24331, 621, 424, 11, 42, "Output",ExpressionUUID->"cc4d5b33-c510-4d7a-b5b3-bcdef54a03d7"]
 }, Open  ]],
-Cell[24770, 635, 1325, 30, 238, "Input",ExpressionUUID->"e286299f-eaa5-48fd-99f9-895ee578f02f"],
-Cell[CellGroupData[{
-Cell[26120, 669, 654, 13, 86, "Input",ExpressionUUID->"03bde2c1-09a5-4a61-a8db-feba17680c98"],
-Cell[26777, 684, 467, 9, 90, "Output",ExpressionUUID->"6b17087d-4360-4566-afef-9bf9bcc92f48"]
-}, Open  ]]
+Cell[24770, 635, 2506, 55, 143, "Input",ExpressionUUID->"e286299f-eaa5-48fd-99f9-895ee578f02f"],
+Cell[27279, 692, 1889, 35, 86, "Input",ExpressionUUID->"03bde2c1-09a5-4a61-a8db-feba17680c98"]
 }
 ]
 *)
