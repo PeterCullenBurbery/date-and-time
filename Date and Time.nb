@@ -1,0 +1,731 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[     28383,        723]
+NotebookOptionsPosition[     27260,        696]
+NotebookOutlinePosition[     27667,        712]
+CellTagsIndexPosition[     27624,        709]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateAndTimeData", "[", "]"}], ":=", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<DateObject\>\"", "->", 
+     RowBox[{"DateObject", "[", "]"}]}], ",", 
+    RowBox[{"\"\<TimeObject\>\"", "->", 
+     RowBox[{"TimeObject", "[", "]"}]}], ",", 
+    RowBox[{"\"\<Now\>\"", "->", "Now"}], ",", 
+    RowBox[{"\"\<Today\>\"", "->", "Today"}], ",", 
+    RowBox[{"\"\<Tomorrow\>\"", "->", "Tomorrow"}], ",", 
+    RowBox[{"\"\<Yesterday\>\"", "->", "Yesterday"}], ",", 
+    RowBox[{"\"\<CurrentDates\>\"", "->", 
+     RowBox[{"AssociationMap", "[", 
+      RowBox[{"CurrentDate", ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Millennium\>\"", ",", "\"\<MillenniumBeginning01\>\"", ",", 
+         "\"\<Century\>\"", ",", "\"\<CenturyBeginning01\>\"", ",", 
+         "\"\<Decade\>\"", ",", "\"\<Year\>\"", ",", "\"\<Quarter\>\"", ",", 
+         "\"\<Month\>\"", ",", "\"\<Week\>\"", ",", 
+         "\"\<WeekBeginningSunday\>\"", ",", "\"\<Day\>\"", ",", 
+         "\"\<Hour\>\"", ",", "\"\<Minute\>\"", ",", "\"\<Second\>\"", ",", 
+         "\"\<Instant\>\""}], "}"}]}], "\[IndentingNewLine]", "]"}]}], ",", 
+    RowBox[{"\"\<NextDates\>\"", "->", 
+     RowBox[{"AssociationMap", "[", 
+      RowBox[{"NextDate", ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Millennium\>\"", ",", "\"\<MillenniumBeginning01\>\"", ",", 
+         "\"\<Century\>\"", ",", "\"\<CenturyBeginning01\>\"", ",", 
+         "\"\<Decade\>\"", ",", "\"\<Year\>\"", ",", "\"\<Quarter\>\"", ",", 
+         "\"\<Month\>\"", ",", "\"\<Week\>\"", ",", 
+         "\"\<WeekBeginningSunday\>\"", ",", "\"\<Day\>\"", ",", 
+         "\"\<Hour\>\"", ",", "\"\<Minute\>\"", ",", "\"\<Second\>\"", ",", 
+         "\"\<Weekday\>\"", ",", "\"\<Weekend\>\"", ",", "Monday", ",", 
+         "Sunday", ",", "Tuesday", ",", "Wednesday", ",", "Thursday", ",", 
+         "Friday", ",", "Saturday", ",", "\"\<MonthFirstDay\>\"", ",", 
+         "\"\<MonthLastDay\>\"", ",", "\"\<BusinessDay\>\""}], "}"}]}], 
+      "\[IndentingNewLine]", "]"}]}]}], "|>"}]}]], "Input",
+ CellChangeTimes->{{3.865452702535804*^9, 3.865452735029873*^9}, {
+  3.865452771439681*^9, 3.8654528827840815`*^9}, {3.8654529275409184`*^9, 
+  3.865453195047033*^9}, {3.8654532333980713`*^9, 3.8654533134172907`*^9}, {
+  3.8654534007137337`*^9, 3.865453455469791*^9}, {3.8654538447380037`*^9, 
+  3.8654539450735445`*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"7e1e0284-662d-4357-bf63-b6a1ff3199e9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateAndTimeData", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.865452726255659*^9, 3.8654527290581636`*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"d8a61b8d-7762-4505-9013-073113fbc61a"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"DateObject\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"\"Wed 29 Jun 2022 01:12:33\"", 
+        StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            
+            RowBox[{"2022", ",", "6", ",", "29", ",", "1", ",", "12", ",", 
+              "33.9860585`9.283875699775807"}], "}"}], ",", "\"Instant\"", 
+          ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+     "DateObject",
+     Editable->False]}], ",", 
+   RowBox[{"\<\"TimeObject\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"\"01:12:33\""}], 
+      RowBox[{"TimeObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            RowBox[{"1", ",", "12", ",", "33.9870245`9.28388804373465"}], 
+            "}"}], ",", "\"Instant\""}], "]"}]},
+     "TimeObject",
+     Editable->False]}], ",", 
+   RowBox[{"\<\"Now\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"\"Wed 29 Jun 2022 01:12:33\"", 
+        StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            
+            RowBox[{"2022", ",", "6", ",", "29", ",", "1", ",", "12", ",", 
+              "33.9870245`9.283888043734652"}], "}"}], ",", "\"Instant\"", 
+          ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+     "DateObject",
+     Editable->False]}], ",", 
+   RowBox[{"\<\"Today\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"\"Wed 29 Jun 2022\""}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            RowBox[{"2022", ",", "6", ",", "29"}], "}"}], ",", "\"Day\""}], 
+        "]"}]},
+     "DateObject",
+     Editable->False]}], ",", 
+   RowBox[{"\<\"Tomorrow\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"\"Thu 30 Jun 2022\""}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            RowBox[{"2022", ",", "6", ",", "30"}], "}"}], ",", "\"Day\""}], 
+        "]"}]},
+     "DateObject",
+     Editable->False]}], ",", 
+   RowBox[{"\<\"Yesterday\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"\"Tue 28 Jun 2022\""}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            RowBox[{"2022", ",", "6", ",", "28"}], "}"}], ",", "\"Day\""}], 
+        "]"}]},
+     "DateObject",
+     Editable->False]}], ",", 
+   RowBox[{"\<\"CurrentDates\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"Millennium\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Millennium: \"", "DateObjectLabel"], "\"2000-3000\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2000", "}"}], ",", "\"Millennium\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"MillenniumBeginning01\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Millennium: \"", "DateObjectLabel"], "\"2001-3000\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2001", "}"}], ",", "\"MillenniumBeginning01\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Century\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Century: \"", "DateObjectLabel"], "\"2000s\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2000", "}"}], ",", "\"Century\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"CenturyBeginning01\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Century: \"", "DateObjectLabel"], "\"2001-2100\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2001", "}"}], ",", "\"CenturyBeginning01\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Decade\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Decade: \"", "DateObjectLabel"], "\"2020s\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2020", "}"}], ",", "\"Decade\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Year\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Year: \"", "DateObjectLabel"], "\"2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2022", "}"}], ",", "\"Year\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Quarter\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Quarter: \"", "DateObjectLabel"], "\"Q2 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "4"}], "}"}], ",", "\"Quarter\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Month\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6"}], "}"}], ",", "\"Month\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Week\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Week beginning: \"", "DateObjectLabel"], 
+           "\"Mon 27 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "27"}], "}"}], ",", "\"Week\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"WeekBeginningSunday\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Week beginning: \"", "DateObjectLabel"], 
+           "\"Sun 26 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "26"}], "}"}], ",", 
+             "\"WeekBeginningSunday\"", ",", "\"Gregorian\"", ",", "0.`"}], 
+           "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Day\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Wed 29 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "29"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Hour\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Hour beginning: \"", "DateObjectLabel"], 
+           "\"Wed 29 Jun 2022 1 am\"", 
+           StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "29", ",", "1"}], "}"}], ",", 
+             "\"Hour\"", ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Minute\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Minute: \"", "DateObjectLabel"], 
+           "\"Wed 29 Jun 2022 01:12\"", 
+           StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "29", ",", "1", ",", "12"}], 
+               "}"}], ",", "\"Minute\"", ",", "\"Gregorian\"", ",", "0.`"}], 
+           "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Second\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Second: \"", "DateObjectLabel"], 
+           "\"Wed 29 Jun 2022 01:12:33\"", 
+           StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               
+               RowBox[{
+                "2022", ",", "6", ",", "29", ",", "1", ",", "12", ",", "33"}],
+                "}"}], ",", "\"Second\"", ",", "\"Gregorian\"", ",", "0.`"}], 
+           "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Instant\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Wed 29 Jun 2022 01:12:33\"", 
+           StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               
+               RowBox[{
+                "2022", ",", "6", ",", "29", ",", "1", ",", "12", ",", 
+                 "33.9918942`9.283950265490532"}], "}"}], ",", "\"Instant\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"NextDates\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"Millennium\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Millennium: \"", "DateObjectLabel"], "\"3000-4000\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "3000", "}"}], ",", "\"Millennium\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"MillenniumBeginning01\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Millennium: \"", "DateObjectLabel"], "\"3001-4000\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "3001", "}"}], ",", "\"MillenniumBeginning01\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Century\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Century: \"", "DateObjectLabel"], "\"2100s\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2100", "}"}], ",", "\"Century\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"CenturyBeginning01\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Century: \"", "DateObjectLabel"], "\"2101-2200\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2101", "}"}], ",", "\"CenturyBeginning01\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Decade\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Decade: \"", "DateObjectLabel"], "\"2030s\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2030", "}"}], ",", "\"Decade\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Year\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Year: \"", "DateObjectLabel"], "\"2023\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", "2023", "}"}], ",", "\"Year\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Quarter\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Quarter: \"", "DateObjectLabel"], "\"Q3 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7"}], "}"}], ",", "\"Quarter\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Month\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7"}], "}"}], ",", "\"Month\"", ",", 
+             "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Week\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Week beginning: \"", "DateObjectLabel"], 
+           "\"Mon 4 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "4"}], "}"}], ",", "\"Week\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"WeekBeginningSunday\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Week beginning: \"", "DateObjectLabel"], 
+           "\"Sun 3 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "3"}], "}"}], ",", 
+             "\"WeekBeginningSunday\"", ",", "\"Gregorian\"", ",", "0.`"}], 
+           "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Day\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Thu 30 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "30"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Hour\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Hour beginning: \"", "DateObjectLabel"], 
+           "\"Wed 29 Jun 2022 2 am\"", 
+           StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "29", ",", "2"}], "}"}], ",", 
+             "\"Hour\"", ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Minute\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Minute: \"", "DateObjectLabel"], 
+           "\"Wed 29 Jun 2022 01:13\"", 
+           StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "29", ",", "1", ",", "13"}], 
+               "}"}], ",", "\"Minute\"", ",", "\"Gregorian\"", ",", "0.`"}], 
+           "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Second\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{
+           StyleBox["\"Second: \"", "DateObjectLabel"], 
+           "\"Wed 29 Jun 2022 01:12:34\"", 
+           StyleBox["\"GMT\"", FontColor -> GrayLevel[0.5]]}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               
+               RowBox[{
+                "2022", ",", "6", ",", "29", ",", "1", ",", "12", ",", "34"}],
+                "}"}], ",", "\"Second\"", ",", "\"Gregorian\"", ",", "0.`"}], 
+           "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Weekday\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Thu 30 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "30"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"Weekend\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Sat 2 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "2"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"Monday", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Mon 4 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "4"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"Sunday", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Sun 3 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "3"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"Tuesday", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Tue 5 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "5"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"Wednesday", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Wed 6 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "6"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"Thursday", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Thu 30 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "30"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"Friday", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Fri 1 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "1"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"Saturday", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Sat 2 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "2"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"MonthFirstDay\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Fri 1 Jul 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "7", ",", "1"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"MonthLastDay\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Thu 30 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "30"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}], ",", 
+      RowBox[{"\<\"BusinessDay\"\>", "\[Rule]", 
+       TemplateBox[{
+         RowBox[{"\"Thu 30 Jun 2022\""}], 
+         RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               RowBox[{"2022", ",", "6", ",", "30"}], "}"}], ",", "\"Day\"", 
+             ",", "\"Gregorian\"", ",", "0.`"}], "]"}]},
+        "DateObject",
+        Editable->False]}]}], "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.8654527293902*^9, {3.8654528128022165`*^9, 3.865452853300537*^9}, 
+   3.865452885441107*^9, 3.865452932007312*^9, {3.8654530166765823`*^9, 
+   3.865453059265527*^9}, 3.8654530971127214`*^9, 3.86545319949594*^9, {
+   3.8654532358695955`*^9, 3.8654532435408545`*^9}, 3.8654533160342493`*^9, 
+   3.8654534034684486`*^9, {3.865453860698658*^9, 3.8654538840411234`*^9}, 
+   3.8654539169551516`*^9, 3.8654539540886383`*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"bec93532-b4da-4c3f-88e5-0d82fdf5e700"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NextDate", "[", "\"\<MonthLastDay\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8654528127817044`*^9, 3.865452813795266*^9}, {
+  3.8654538106258984`*^9, 3.8654538216611757`*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"13cdcd8a-8fe5-4aec-ab8b-9b3578342867"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Thu 30 Jun 2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "6", ",", "30"}], "}"}], ",", "\"Day\"", ",", 
+       "\"Gregorian\"", ",", "0.`"}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8654538219873085`*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"cc4d5b33-c510-4d7a-b5b3-bcdef54a03d7"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"datepropertiesconnectedtodaysoftheweek", "=", 
+   RowBox[{"<|", 
+    RowBox[{
+     RowBox[{
+     "\"\<Easter\>\"", "->", 
+      "\"\<First Sunday after the paschal full moon, which is the first full \
+moon on or after 21 March\>\""}], ",", 
+     RowBox[{"\"\<Weekend\>\"", "->", "\"\<Satuday and Sunday\>\""}], ",", 
+     RowBox[{
+     "\"\<BusinessDay\>\"", "->", 
+      "\"\<Monday Tuesday Wednesday Thursday Friday\>\""}], ",", 
+     RowBox[{
+     "\"\<United States presidential and other government elections\>\"", 
+      "->", "\"\<first Tuesday occuring within November 2 to November \
+8\>\""}], ",", 
+     RowBox[{
+     "\"\<Martin Luther King Junior birthday federal holiday\>\"", "->", 
+      "\"\<third Monday of January\>\""}], ",", 
+     RowBox[{
+     "\"\<Washington's Birthday\>\"", "->", 
+      "\"\<third Monday in February\>\""}], ",", 
+     RowBox[{"\"\<Memorial Day\>\"", "->", "\"\<last Monday in May\>\""}]}], 
+    "|>"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.865453984141142*^9, 3.865454023647084*^9}, {
+  3.8654541036796975`*^9, 3.8654541842442865`*^9}, {3.8654542506686454`*^9, 
+  3.865454265247711*^9}, {3.865454382638654*^9, 3.865454411484867*^9}, {
+  3.8654544577039595`*^9, 
+  3.865454498978294*^9}},ExpressionUUID->"e286299f-eaa5-48fd-99f9-\
+895ee578f02f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"datesthatdependondates", "=", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<New Years Day\>\"", "->", "\"\<January 1 each year\>\""}], 
+    ",", 
+    RowBox[{
+    "\"\<Juneteenth National Independence Day\>\"", "->", 
+     "\"\<June 19 to celebrate the emancipation of slaves in the United \
+States\>\""}]}], "|>"}]}]], "Input",
+ CellChangeTimes->{{3.8654542700811534`*^9, 3.8654542705655203`*^9}, {
+  3.865454342495861*^9, 3.8654543682511396`*^9}, {3.8654545049125032`*^9, 
+  3.865454533129928*^9}, {3.8654547285641994`*^9, 3.8654547287536106`*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"03bde2c1-09a5-4a61-a8db-feba17680c98"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"New Years Day\"\>", 
+    "\[Rule]", "\<\"January 1 each year\"\>"}], ",", 
+   RowBox[{"\<\"Juneteenth National Independence Day\"\>", 
+    "\[Rule]", "\<\"June 19 to celebrate the emancipation of slaves in the \
+United States\"\>"}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8654547310259576`*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"6b17087d-4360-4566-afef-9bf9bcc92f48"]
+}, Open  ]]
+},
+WindowSize->{581.25, 654.},
+WindowMargins->{{Automatic, 48}, {Automatic, 6.75}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8545c498-d0c7-4a7e-a07e-6c879c6cdace"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 2460, 46, 314, "Input",ExpressionUUID->"7e1e0284-662d-4357-bf63-b6a1ff3199e9"],
+Cell[CellGroupData[{
+Cell[3046, 70, 210, 3, 28, "Input",ExpressionUUID->"d8a61b8d-7762-4505-9013-073113fbc61a"],
+Cell[3259, 75, 20752, 535, 889, "Output",ExpressionUUID->"bec93532-b4da-4c3f-88e5-0d82fdf5e700"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24048, 615, 280, 4, 28, "Input",ExpressionUUID->"13cdcd8a-8fe5-4aec-ab8b-9b3578342867"],
+Cell[24331, 621, 424, 11, 42, "Output",ExpressionUUID->"cc4d5b33-c510-4d7a-b5b3-bcdef54a03d7"]
+}, Open  ]],
+Cell[24770, 635, 1325, 30, 238, "Input",ExpressionUUID->"e286299f-eaa5-48fd-99f9-895ee578f02f"],
+Cell[CellGroupData[{
+Cell[26120, 669, 654, 13, 86, "Input",ExpressionUUID->"03bde2c1-09a5-4a61-a8db-feba17680c98"],
+Cell[26777, 684, 467, 9, 90, "Output",ExpressionUUID->"6b17087d-4360-4566-afef-9bf9bcc92f48"]
+}, Open  ]]
+}
+]
+*)
+
