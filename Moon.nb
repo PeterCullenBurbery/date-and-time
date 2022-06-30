@@ -10,18 +10,103 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[       985,         36]
-NotebookOptionsPosition[       636,         22]
-NotebookOutlinePosition[      1040,         38]
-CellTagsIndexPosition[       997,         35]
+NotebookDataLength[      4892,        132]
+NotebookOptionsPosition[      3976,        107]
+NotebookOutlinePosition[      4382,        123]
+CellTagsIndexPosition[      4339,        120]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["", "Text",ExpressionUUID->"3ded9546-a78f-4f89-8525-d29fd7fd3bf9"]
+
+Cell[CellGroupData[{
+Cell["Moon", "Title",
+ CellChangeTimes->{{3.8655061984670105`*^9, 
+  3.8655061989953365`*^9}},ExpressionUUID->"3ded9546-a78f-4f89-8525-\
+d29fd7fd3bf9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MoonPhase", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.865506203622041*^9, 3.8655062050711126`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"755e346c-84f3-42a0-b419-b28e4a72c3d7"],
+
+Cell[BoxData["0.0038353859231637366`4."], "Output",
+ CellChangeTimes->{3.8655062067794576`*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"8218a483-4edf-46eb-8961-846c2d70d446"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MoonPhaseData", "[", "]"}], ":=", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<SignedFraction\>\"", "->", 
+     RowBox[{"MoonPhase", "[", "\"\<SignedFraction\>\"", "]"}]}], ",", 
+    RowBox[{"\"\<Phase\>\"", "->", 
+     RowBox[{
+      RowBox[{"MoonPhase", "[", "\"\<Name\>\"", "]"}], "[", "\"\<Name\>\"", 
+      "]"}]}], ",", 
+    RowBox[{"\"\<Icon\>\"", "->", 
+     RowBox[{"MoonPhase", "[", "\"\<Icon\>\"", "]"}]}], ",", 
+    RowBox[{"\"\<Azimuth\>\"", "->", 
+     RowBox[{"First", "[", 
+      RowBox[{"MoonPosition", "[", "]"}], "]"}]}], ",", 
+    RowBox[{"\"\<Altitude\>\"", "->", 
+     RowBox[{"Last", "[", 
+      RowBox[{"MoonPosition", "[", "]"}], "]"}]}]}], "|>"}]}]], "Input",
+ CellChangeTimes->{{3.865506209027899*^9, 3.865506299642485*^9}, {
+  3.865506382382087*^9, 3.8655063833790607`*^9}, {3.8655064859070387`*^9, 
+  3.8655064962605295`*^9}},
+ CellLabel->"In[34]:=",ExpressionUUID->"ae2d7d0d-926a-4ce9-a673-a82c4fa4c032"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MoonPhaseData", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8655062517356453`*^9, 3.8655062528277254`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"ef32cef6-5001-474d-9dab-508cec81a4c5"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"SignedFraction\"\>", "\[Rule]", "0.0038693923650932049`4."}], 
+   ",", 
+   RowBox[{"\<\"Phase\"\>", "\[Rule]", "\<\"waxing crescent moon\"\>"}], ",", 
+   RowBox[{"\<\"Icon\"\>", "\[Rule]", 
+    GraphicsBox[{
+      {GrayLevel[0.75], 
+       PolygonBox[{{-1.1, -1.3}, {1.1, -1.3}, {1.3, -1.1}, {1.3, 1.1}, {1.1, 
+        1.3}, {-1.1, 1.3}, {-1.3, 1.1}, {-1.3, -1.1}}], 
+       DiskBox[{-1.1, -1.1}, 0.2], DiskBox[{1.1, -1.1}, 0.2], 
+       DiskBox[{1.1, 1.1}, 0.2], DiskBox[{-1.1, 1.1}, 0.2]}, 
+      {GrayLevel[1], 
+       DiskBox[{0, 0}, 1, 
+        NCache[{Rational[3, 2] Pi, Rational[5, 2] Pi}, {4.71238898038469, 
+         7.853981633974483}]]}, 
+      {GrayLevel[0.75], DiskBox[{0, 0}, {0.9922612043022024, 1.}]}, 
+      {GrayLevel[0.6], CircleBox[{0, 0}, 1]}},
+     AspectRatio->1,
+     ImageSize->100]}], ",", 
+   RowBox[{"\<\"Azimuth\"\>", "\[Rule]", 
+    TemplateBox[{"95.9278301408836000519`4.981944620968476", 
+      RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], "degrees", 
+      "\"AngularDegrees\""},
+     "QuantityPostfix"]}], ",", 
+   RowBox[{"\<\"Altitude\"\>", "\[Rule]", 
+    TemplateBox[{"48.8064390991940371123`4.688477122838153", 
+      RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], "degrees", 
+      "\"AngularDegrees\""},
+     "QuantityPostfix"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.86550625389215*^9, 3.8655063015901155`*^9}, 
+   3.8655063855937166`*^9, 3.8655064981095524`*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"0a2427d1-339e-492a-8518-6c5a51f46dfc"]
+}, Open  ]]
+}, Open  ]]
 },
-WindowSize->{1428., 837.75},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1440., 837.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"8eaab368-c03f-4d01-b5a2-56a87e5f3f74"
@@ -37,10 +122,19 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[561, 20, 71, 0, 35, "Text",ExpressionUUID->"3ded9546-a78f-4f89-8525-d29fd7fd3bf9"]
+Cell[CellGroupData[{
+Cell[583, 22, 151, 3, 98, "Title",ExpressionUUID->"3ded9546-a78f-4f89-8525-d29fd7fd3bf9"],
+Cell[CellGroupData[{
+Cell[759, 29, 204, 3, 28, "Input",ExpressionUUID->"755e346c-84f3-42a0-b419-b28e4a72c3d7"],
+Cell[966, 34, 174, 2, 32, "Output",ExpressionUUID->"8218a483-4edf-46eb-8961-846c2d70d446"]
+}, Open  ]],
+Cell[1155, 39, 971, 22, 48, "Input",ExpressionUUID->"ae2d7d0d-926a-4ce9-a673-a82c4fa4c032"],
+Cell[CellGroupData[{
+Cell[2151, 65, 210, 3, 28, "Input",ExpressionUUID->"ef32cef6-5001-474d-9dab-508cec81a4c5"],
+Cell[2364, 70, 1584, 33, 118, "Output",ExpressionUUID->"0a2427d1-339e-492a-8518-6c5a51f46dfc"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
