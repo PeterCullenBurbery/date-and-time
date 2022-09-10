@@ -1,0 +1,3039 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    119237,       3029]
+NotebookOptionsPosition[    102665,       2727]
+NotebookOutlinePosition[    103107,       2744]
+CellTagsIndexPosition[    103064,       2741]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"DateObject", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.871762710917444*^9, 3.871762712298928*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"da65f100-017a-4884-a0c7-969c9c25669f"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Fri 9 Sep 2022 21:38:32\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "38", ",", 
+           "32.6425249`9.266358645947566"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717627126425247`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"1f971cc2-d9ee-495f-b7cb-f0fdd7d971a9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", "\"\<Millisecond\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.871762728876788*^9, 3.8717627348492165`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"067684bc-2f84-49df-b8d8-208f0e7699bd"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DateObject", "str", 
+   "\"String \\!\\(\\*RowBox[{\\\"\\\\\\\"Millisecond\\\\\\\"\\\"}]\\) cannot \
+be interpreted as a date.\"", 2, 2, 1, 19477224625119343326, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8717627353173094`*^9},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"41f08030-0881-4665-aa9c-5f4ba86664c9"],
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", "\<\"Millisecond\"\>", "]"}]], "Output",
+ CellChangeTimes->{3.8717627353485374`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"720808f7-acd9-47e7-9152-46782d611770"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", "\"\<Week\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.871762728876788*^9, 3.871762739638117*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"9f82f8f4-6b7f-4aaf-993e-fbcaa256a79d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DateObject", "str", 
+   "\"String \\!\\(\\*RowBox[{\\\"\\\\\\\"Week\\\\\\\"\\\"}]\\) cannot be \
+interpreted as a date.\"", 2, 3, 2, 19477224625119343326, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8717627398722267`*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"edcf9dc5-ba21-4c84-a56b-dea97450952e"],
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", "\<\"Week\"\>", "]"}]], "Output",
+ CellChangeTimes->{3.8717627398878517`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"5108128d-67a0-4b11-9464-dd6218a1a74e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Week\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762728876788*^9, 3.871762743521204*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"a6eaf4d3-0dad-4976-bddf-1da070d21d48"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Week beginning: \"", "DateObjectLabel"], 
+     "\"Mon 5 Sep 2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "9", ",", "5"}], "}"}], ",", "\"Week\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717627438178024`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"085cfd1c-150b-4f22-8c7d-7a0e82ab8bf1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Second\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762728876788*^9, 3.871762747371148*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"cda11190-16fe-4f6e-860f-e00bbf22610e"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Second: \"", "DateObjectLabel"], 
+     "\"Fri 9 Sep 2022 21:39:07\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "39", ",", 
+           "7.6052657`8.63368936137252"}], "}"}], ",", "\"Second\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717627476052656`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"c1b17600-ca09-45af-87f6-b9335c5398a4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Millisecond\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762728876788*^9, 3.8717627531789827`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"083c3750-0d02-44cb-8c76-dc76313b5ab6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DateObject", "ngran", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Millisecond\\\\\\\"\\\"}]\\) is not a \
+recognized date granularity specification.\"", 2, 6, 3, 19477224625119343326, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8717627535068455`*^9},
+ CellLabel->
+  "During evaluation of \
+In[6]:=",ExpressionUUID->"c9cbd577-734b-43a2-9dcf-80fc8fc24ab1"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DateObject", "notgran", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Millisecond\\\\\\\"\\\"}]\\) is not a \
+valid granularity specification for calendar \\!\\(\\*RowBox[{\\\"Automatic\\\
+\"}]\\).\"", 2, 6, 4, 19477224625119343326, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8717627535534782`*^9},
+ CellLabel->
+  "During evaluation of \
+In[6]:=",ExpressionUUID->"15cf7f7c-3248-4b68-a51d-143664e5e3d1"],
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{
+   TemplateBox[{
+     RowBox[{"\"Fri 9 Sep 2022 21:39:13\"", 
+       StyleBox[
+        RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+          StyleBox[
+           RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}],
+         FontColor -> GrayLevel[0.5]]}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           
+           RowBox[{"2022", ",", "9", ",", "9", ",", "21", ",", "39", ",", 
+             "13.4599519`8.881618461613655"}], "}"}], ",", "\"Instant\"", ",",
+          "\"Gregorian\"", ",", 
+         RowBox[{"-", "4.`"}]}], "]"}]},
+    "DateObject",
+    Editable->False], ",", "\<\"Millisecond\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.8717627535654945`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"1ba0a415-215d-47fc-98dd-7deff258b97c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Minute\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.871762853010949*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"20ab3bdb-e86c-4ede-84b0-b2481a4d9865"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Minute: \"", "DateObjectLabel"], "\"Fri 9 Sep 2022 21:40\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "9", ",", "9", ",", "21", ",", "40"}], "}"}], 
+       ",", "\"Minute\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871762853229689*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"12a71201-6cd3-4d02-b71a-237974fb9ccf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Hour\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.87176285630317*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"5bf22a42-54f1-4fd3-bd4a-d55c5c4aac97"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Hour beginning: \"", "DateObjectLabel"], 
+     "\"Fri 9 Sep 2022 9 pm\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "9", ",", "9", ",", "21"}], "}"}], ",", 
+       "\"Hour\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717628567227774`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"87bcef10-8d57-4383-8d16-338ee3db9f99"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Day\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.8717628602728653`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"6306437e-fea9-4396-be2a-609114cdf949"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Fri 9 Sep 2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "9", ",", "9"}], "}"}], ",", "\"Day\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871762860538216*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"9a99f083-d995-4501-9e20-ea1c1743d7b2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Month\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.8717628654058075`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"06f91a56-3a6e-4872-b1b0-429bd3c287d9"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sep 2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "9"}], "}"}], ",", "\"Month\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717628656555705`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"81719b03-fa00-419e-b5d3-359b62c2791c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Quarter\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.8717628707078333`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"e3654767-1d18-41cd-b27f-98e2e8b4ca8a"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Quarter: \"", "DateObjectLabel"], "\"Q3 2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "7"}], "}"}], ",", "\"Quarter\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717628709419503`*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"c69eb076-5f09-496c-86fe-1c910cedcb11"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Year\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.8717628808441753`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"b5d6ae5e-85e5-4df6-b5cd-0ef896ad6581"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Year: \"", "DateObjectLabel"], "\"2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", "2022", "}"}], ",", "\"Year\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717628813281536`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"749dd361-d498-45c1-ac44-f08eb80e95ed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Decade\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.871762887138736*^9}, {
+  3.8717629435388823`*^9, 3.871762944335745*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"caafba86-df5e-4a85-818c-e8b22c0835fa"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Decade: \"", "DateObjectLabel"], "\"2020s\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", "2020", "}"}], ",", "\"Decade\"", ",", "\"Gregorian\"", 
+       ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871762944569846*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"5c7d8987-285e-4505-ab7a-67a6476f2829"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<Millennium\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762848849541*^9, 3.871762887138736*^9}, {
+  3.8717629435388823`*^9, 3.8717629485716133`*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"62d4d983-f1ab-4fc2-b055-897cf6fc6ee3"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Millennium: \"", "DateObjectLabel"], "\"2000-3000\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", "2000", "}"}], ",", "\"Millennium\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871762948852867*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"c5f95055-29de-4154-bbbf-6db5c491896e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"Now", ",", "\"\<MillenniumBeginning01\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762955820171*^9, 3.871762965635442*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"9e493276-cee3-4a81-b5b3-a8358033390d"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Millennium: \"", "DateObjectLabel"], "\"2001-3000\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", "2001", "}"}], ",", "\"MillenniumBeginning01\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717629659008856`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"22787fff-b5d9-468e-b7e6-f18aea298d65"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RandomInteger", "[", 
+  SuperscriptBox["10", "12"], "]"}]], "Input",
+ CellChangeTimes->{{3.8717629810006847`*^9, 3.8717629845009356`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"e23ae183-268c-44d4-b13f-3037943a6504"],
+
+Cell[BoxData["56659093796"], "Output",
+ CellChangeTimes->{3.8717629849069233`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"cf758e03-9f11-46c2-ba0b-ca14cdb2e436"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "12"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762986702839*^9, 3.8717629902421074`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"a9e22756-73e1-4e03-bced-3790e0414650"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sun 26 May 9405 01:46:56\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "9405", ",", "5", ",", "26", ",", "1", ",", "46", ",", "56"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717629906052923`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"26294307-52e5-43ac-8c8c-84be43593769"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "11"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762986702839*^9, 3.871762994528161*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"1e4c17ef-d7dc-4275-a3e1-9efa5054ae69"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 31 Aug 2593 16:24:49\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2593", ",", "8", ",", "31", ",", "16", ",", "24", ",", "49"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717629949188213`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"b2c7d973-0154-42a2-99b7-9517cbbb6767"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "11"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762986702839*^9, 3.8717629968840103`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"eef1a06a-6cd9-4474-88ec-1e954614cfca"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sun 11 Feb 2712 13:48:21\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2712", ",", "2", ",", "11", ",", "13", ",", "48", ",", "21"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717629974677296`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"4060449f-e933-4631-873e-f6d1f137f2f2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "11"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762986702839*^9, 3.871762998796167*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"497b3176-6613-41bb-ac32-cdee6aa75794"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 28 Sep 3641 21:11:08\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "3641", ",", "9", ",", "28", ",", "21", ",", "11", ",", "8"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717629994047937`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"371dc005-378c-4d12-8802-761622392c0f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "10"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762986702839*^9, 3.8717630062041483`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"4c5ce390-2a98-4640-a82c-6f68360300d5"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sun 19 Jun 2050 10:33:24\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2050", ",", "6", ",", "19", ",", "10", ",", "33", ",", "24"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763006719509*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"2c3a61d6-b550-4a81-97df-c5e430ffcca8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "10"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762986702839*^9, 3.871763007399559*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"814eb142-21b5-4a98-b51c-3c97937bf5ad"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 17 Jan 2198 02:31:58\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2198", ",", "1", ",", "17", ",", "2", ",", "31", ",", "58"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763007882512*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"e2956a8d-e020-47b8-af65-d15975db9b5a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "10"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871762986702839*^9, 3.871763008618841*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"49295fb2-84b2-4873-8531-8e5134a4fb51"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Tue 20 Aug 1946 11:17:15\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "1946", ",", "8", ",", "20", ",", "11", ",", "17", ",", "15"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763009054615*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"19f3811d-0cc6-4900-81d2-715763f81789"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "10"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763010496478*^9, 3.871763011830311*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"0ac243ac-7e87-4645-83a5-570e762a96fc"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Mon 21 Aug 2073 17:23:15\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2073", ",", "8", ",", "21", ",", "17", ",", "23", ",", "15"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717630122206755`*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"18587e72-85aa-4cf2-bc47-fb5de4e702ae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "9"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763010496478*^9, 3.8717630165776463`*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"8270ace7-12fa-46a3-b15a-f1960ace07d2"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 21 Nov 1925 04:52:16\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "1925", ",", "11", ",", "21", ",", "4", ",", "52", ",", "16"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763016937025*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"d6805e3b-a5ee-410a-a1d0-553c7a0d1569"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "9"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763010496478*^9, 3.871763017949331*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"6d161bff-a6be-44b5-ad58-0b6def1ecba2"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 16 Aug 1913 08:05:32\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"1913", ",", "8", ",", "16", ",", "8", ",", "5", ",", "32"}],
+          "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763018294341*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"8e585dd6-5c8d-4898-baaf-4eb9e7b9719f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "9"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763010496478*^9, 3.8717630191015825`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"8e1bb118-33b3-4211-bec1-599f624aaa34"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Tue 26 Jan 1926 22:58:34\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "1926", ",", "1", ",", "26", ",", "22", ",", "58", ",", "34"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717630195087748`*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"dfa708a9-7a4d-4d2a-8ae5-e528e0f4f20f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "9"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763010496478*^9, 3.87176302070018*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"883e6aa0-705e-4c2f-bc1e-2200b735e041"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Fri 15 Mar 1907 15:39:37\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "1907", ",", "3", ",", "15", ",", "15", ",", "39", ",", "37"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763021077801*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"2da26dc7-d6f9-46a2-83a1-34981b7d0d6e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   SuperscriptBox["10", "9"], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763010496478*^9, 3.871763021956834*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"b12e76ff-1f6d-497f-b711-9f4625d75349"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 20 Nov 1909 11:24:28\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "1909", ",", "11", ",", "20", ",", "11", ",", "24", ",", "28"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717630222658896`*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"b2d4b915-08c3-40e4-ad58-53427a80e2d7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"{", 
+   RowBox[{"2022", ",", "9"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763026559844*^9, 3.8717630307130423`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"bb98bc2c-8a33-454d-93cb-3c337fe6ab70"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sep 2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "9"}], "}"}], ",", "\"Month\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717630310723825`*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"30a32452-edb6-4bc9-8ea2-696f95ccb572"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"{", "2002", "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763033031728*^9, 3.8717630352154427`*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"6e1de510-79cc-4456-a28d-15b76f7411c8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Year: \"", "DateObjectLabel"], "\"2002\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", "2002", "}"}], ",", "\"Year\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717630355432854`*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"20ad5ee5-d292-4ac5-b581-3d9a81f90a97"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"2002", ",", "2", ",", "18"}], "}"}], "]"}], "+", 
+  TemplateBox[<|
+   "query" -> "2000 weeks", "boxes" -> 
+    TemplateBox[{"2000", "\"wk\"", "weeks", "\"Weeks\""}, "Quantity", 
+      SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+    "open" -> {1, 2}, 
+    "querystate" -> {
+     "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+      0.8124944`7.361365369845367, "Messages" -> {}}, "contextinfo" -> 
+    Automatic, "version" -> 5|>,
+   "LinguisticAssistantTemplate"]}]], "Input",
+ CellChangeTimes->{{3.8717630388416157`*^9, 3.8717630485349936`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"9a7542cd-49e2-4016-8d07-91419a9d99aa"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Mon 18 Jun 2040\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2040", ",", "6", ",", "18"}], "}"}], ",", "\"Day\""}], 
+     "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717630524388742`*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"7b79c860-c534-4bf5-bd78-b202920266a8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateObject", "[", "]"}], "-", 
+  RowBox[{"DateObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"2002", ",", "2", ",", "18"}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8717630773962793`*^9, 3.8717630775059233`*^9}},
+ CellLabel->"In[34]:=",ExpressionUUID->"e22c6ae9-59bc-409c-be7d-e78045230012"],
+
+Cell[BoxData[
+ TemplateBox[{"7508.`", "\"days\"", "days", "\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8717630778647003`*^9},
+ CellLabel->"Out[34]=",ExpressionUUID->"fd3e00d2-7964-461f-8443-4ba3adaee9a1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateObject", "[", "]"}], "-", 
+  RowBox[{"DateObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"2002", ",", "2", ",", "18", ",", "11"}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8717630557643557`*^9, 3.871763066740411*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"b04c0b7b-943d-497b-b4a0-0c8e27d0c949"],
+
+Cell[BoxData[
+ TemplateBox[{"180202.`", "\"h\"", "hours", "\"Hours\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8717630677403975`*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"8bbf6b59-a269-42fa-9727-34d3b6498a79"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateObject", "[", "]"}], "+", 
+  TemplateBox[<|
+   "query" -> "10000 hours", "boxes" -> 
+    TemplateBox[{"10000", "\"h\"", "hours", "\"Hours\""}, "Quantity", 
+      SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+    "open" -> {1, 2}, 
+    "querystate" -> {
+     "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+      0.6878027`7.2890088698275575, "Messages" -> {}}, "contextinfo" -> 
+    Automatic, "version" -> 5|>,
+   "LinguisticAssistantTemplate"]}]], "Input",
+ CellChangeTimes->{{3.8717630996707573`*^9, 3.8717631043083086`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"14e75732-ed37-4b8e-a4db-18023fefb2f8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Tue 31 Oct 2023 13:45:08\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2023", ",", "10", ",", "31", ",", "13", ",", "45", ",", 
+           "8.102519`"}], "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", 
+       ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763108102519*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"2cb72357-327e-4df5-87d2-5a82cd5bfcce"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateObject", "[", 
+   RowBox[{"{", "2026", "}"}], "]"}], "-", 
+  RowBox[{"DateObject", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8717631119387255`*^9, 3.871763122903191*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"e1d513ae-d6e0-40fd-b70d-dfe6b9e02b35"],
+
+Cell[BoxData[
+ TemplateBox[{"3.`", "\"yr\"", "years", "\"Years\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8717631232154303`*^9},
+ CellLabel->"Out[36]=",ExpressionUUID->"d20e6301-c68b-4564-acad-b5a31872b1bf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"2026", ",", "7", ",", "1"}], "}"}], "]"}], "-", 
+  RowBox[{"DateObject", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8717631119387255`*^9, 3.871763133447116*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"8b1eb9b6-e807-45bc-a836-4d560fe3f654"],
+
+Cell[BoxData[
+ TemplateBox[{"1390.`", "\"days\"", "days", "\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8717631356112137`*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"bd2ccedc-5bf7-4d9e-ae7e-50800ecc0cf2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"{", 
+   RowBox[{"2022", ",", "2", ",", "32"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717631397999835`*^9, 3.87176314354159*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"c4fb636a-13f9-4e2a-8153-e2f9f4e108df"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Fri 4 Mar 2022\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2022", ",", "3", ",", "4"}], "}"}], ",", "\"Day\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717631440725794`*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"cae92929-19d2-404e-9850-4cc595156519"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", "\"\<18 February 2002 11:45pm\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8717631584786687`*^9, 3.8717631688729115`*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"70801f34-a4d0-44ec-ae79-d4f82d412b51"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Minute: \"", "DateObjectLabel"], "\"Mon 18 Feb 2002 23:45\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"2002", ",", "2", ",", "18", ",", "23", ",", "45"}], "}"}], 
+       ",", "\"Minute\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763169169505*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"4718eb8c-851a-427d-8fb5-cb147e79b4fd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", "\"\<18 February 2002 11:45:45pm\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8717631584786687`*^9, 3.871763172794649*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"752c7994-8883-48ed-8ac0-768cce7ee261"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Mon 18 Feb 2002 23:45:45\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2002", ",", "2", ",", "18", ",", "23", ",", "45", ",", "45"}], 
+         "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717631744349937`*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"ee5d58c5-cb98-43e4-9a98-1def83f77a36"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{
+  "Import", "[", 
+   "\"\<https://upload.wikimedia.org/wikipedia/commons/8/86/Moscow_Brateevo_\
+Floodplain_asv2018-08_img4.jpg\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717632026839294`*^9, 3.871763241008645*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"ff6e902f-37cb-4a93-9cf7-958170ddffb4"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Thu 14 Mar 2019 02:28:01\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2019", ",", "3", ",", "14", ",", "2", ",", "28", ",", "1.`"}], 
+         "}"}], ",", "\"Instant\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763248195178*^9},
+ CellLabel->"Out[41]=",ExpressionUUID->"7a5ee98c-b550-445b-ab41-df9348c07b6e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{
+   RowBox[{
+   "Import", "[", 
+    "\"\<https://upload.wikimedia.org/wikipedia/commons/8/86/Moscow_Brateevo_\
+Floodplain_asv2018-08_img4.jpg\>\"", "]"}], ",", 
+   RowBox[{"CalendarType", "->", "\"\<Gregorian\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717632026839294`*^9, 3.8717632665589123`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"2275f4e7-39a5-47bb-a190-2bd16f6c1ae8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Thu 14 Mar 2019 02:28:01\""}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2019", ",", "3", ",", "14", ",", "2", ",", "28", ",", "1.`"}], 
+         "}"}], ",", "\"Instant\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717632704918585`*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"b78dac83-d3f4-47da-9bd5-bf46b1e23159"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{
+   RowBox[{
+   "Import", "[", 
+    "\"\<https://upload.wikimedia.org/wikipedia/commons/8/86/Moscow_Brateevo_\
+Floodplain_asv2018-08_img4.jpg\>\"", "]"}], ",", 
+   RowBox[{"CalendarType", "->", "\"\<Jewish\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717632026839294`*^9, 3.871763272797863*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"3d7b180d-7f8e-4d13-ba70-21956ec8aa00"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Yom Revi'i 7 Nisan 5780 02:28:00\"", 
+     StyleBox[
+      RowBox[{"\[ThinSpace]", 
+        RowBox[{"(", "\[InvisibleSpace]", 
+          RowBox[{"\"Jewish\"", "\"calendar\""}], "\[InvisibleSpace]", 
+          ")"}]}], FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "5779", ",", "13", ",", "7", ",", "2", ",", "28", ",", 
+           "0.999988317489624`"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Jewish\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717632766760273`*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"94f33a9e-1213-4e0b-87a7-6b00e8a216ca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{
+   RowBox[{
+   "Import", "[", 
+    "\"\<https://upload.wikimedia.org/wikipedia/commons/8/86/Moscow_Brateevo_\
+Floodplain_asv2018-08_img4.jpg\>\"", "]"}], ",", 
+   RowBox[{"CalendarType", "->", "\"\<Julian\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717632026839294`*^9, 3.87176327761385*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"a4bf37da-da73-4abe-ac7e-795cd86d992b"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Thu 1 Mar 2019 02:28:00\"", 
+     StyleBox[
+      RowBox[{"\[ThinSpace]", 
+        RowBox[{"(", "\[InvisibleSpace]", 
+          RowBox[{"\"Julian\"", "\"calendar\""}], "\[InvisibleSpace]", 
+          ")"}]}], FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2019", ",", "3", ",", "1", ",", "2", ",", "28", ",", 
+           "0.999988317489624`"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Julian\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717632815018697`*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"03e4a308-a51a-4f28-9851-f0c9c54cded2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{
+   RowBox[{
+   "Import", "[", 
+    "\"\<https://upload.wikimedia.org/wikipedia/commons/8/86/Moscow_Brateevo_\
+Floodplain_asv2018-08_img4.jpg\>\"", "]"}], ",", 
+   RowBox[{"CalendarType", "->", "\"\<Coptic\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717632026839294`*^9, 3.8717633074689665`*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"6ab68fc5-f528-4b74-9dd6-23d432c35a28"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Ptiou 5 Paremotep 1735 02:28:00\"", 
+     StyleBox[
+      RowBox[{"\[ThinSpace]", 
+        RowBox[{"(", "\[InvisibleSpace]", 
+          RowBox[{"\"Coptic\"", "\"calendar\""}], "\[InvisibleSpace]", 
+          ")"}]}], FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "1735", ",", "7", ",", "5", ",", "2", ",", "28", ",", 
+           "0.999988317489624`"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Coptic\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763311310293*^9},
+ CellLabel->"Out[45]=",ExpressionUUID->"9e155751-5388-4ab5-97f5-88bc4357eaaa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"DateFormat", "->", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Day\>\"", ",", "\"\<DayName\>\""}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717633208418074`*^9, 3.8717633430886335`*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"f0823755-cb1e-4280-b200-c32a8bc9f986"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"09Friday\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "49", ",", 
+           "3.4008764`8.284165829383653"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}], ",", "\"SmearedUTC\"", ",", 
+       RowBox[{"{", 
+         RowBox[{"\"Day\"", ",", "\"DayName\""}], "}"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763343400876*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"20fa3703-883d-4174-9c98-d0e15973c575"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Riffle", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<Day\>\"", ",", "\"\<DayName\>\""}], "}"}], ",", 
+   "\"\</\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763344474697*^9, 3.871763351974292*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"27ed3ad6-e069-4d6d-9e33-ef1d1b12e71b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Day\"\>", ",", "\<\"/\"\>", ",", "\<\"DayName\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.871763352349031*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"19817d98-73f8-4110-b80e-15add1e916ff"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"DateFormat", "->", 
+   RowBox[{"Riffle", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<Day\>\"", ",", "\"\<DayName\>\""}], "}"}], ",", 
+     "\"\< / \>\""}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717633665607643`*^9, 3.8717633765760937`*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"29a78a31-5227-484f-ab4f-ae8442b577fe"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"09 / Friday\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "49", ",", 
+           "37.2164497`9.323309829060792"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}], ",", "\"SmearedUTC\"", ",", 
+       RowBox[{"{", 
+         RowBox[{"\"Day\"", ",", "\" / \"", ",", "\"DayName\""}], "}"}]}], 
+     "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.871763366873269*^9, 3.871763377232072*^9}},
+ CellLabel->"Out[49]=",ExpressionUUID->"d2dbc1ef-38d5-4de2-9e36-bc513c497595"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"DateFormat", "->", 
+   RowBox[{"Riffle", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Hour\>\"", ",", "\"\<Day\>\"", ",", "\"\<DayName\>\"", ",", 
+       "\"\<Month\>\"", ",", "\"\<Quarter\>\"", ",", "\"\<Year\>\"", ",", 
+       "\"\<Decade\>\"", ",", "\"\<Millenium\>\""}], "}"}], ",", 
+     "\"\< / \>\""}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717633665607643`*^9, 3.8717634123713164`*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"103c0768-b100-4f0b-bd40-c2a92a8cdcf4"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"21 / 09 / Friday / 09 / 3 / 2022 / 2020 / Millenium\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "50", ",", 
+           "12.8396651`8.861128652505204"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}], ",", "\"SmearedUTC\"", ",", 
+       RowBox[{"{", 
+         RowBox[{
+          "\"Hour\"", ",", "\" / \"", ",", "\"Day\"", ",", "\" / \"", ",", 
+           "\"DayName\"", ",", "\" / \"", ",", "\"Month\"", ",", "\" / \"", 
+           ",", "\"Quarter\"", ",", "\" / \"", ",", "\"Year\"", ",", 
+           "\" / \"", ",", "\"Decade\"", ",", "\" / \"", ",", 
+           "\"Millenium\""}], "}"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.8717633894775896`*^9, 3.8717634128396654`*^9}},
+ CellLabel->"Out[53]=",ExpressionUUID->"30179beb-fae7-4eb0-b1f0-0cf8d8896207"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"DateFormat", "->", 
+   RowBox[{"Riffle", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Second\>\"", ",", "\"\<Minute\>\"", ",", "\"\<Hour\>\"", ",", 
+       "\"\<Day\>\"", ",", "\"\<DayName\>\"", ",", "\"\<Month\>\"", ",", 
+       "\"\<Quarter\>\"", ",", "\"\<Year\>\"", ",", "\"\<Decade\>\"", ",", 
+       "\"\<Millenium\>\""}], "}"}], ",", "\"\< / \>\""}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8717633665607643`*^9, 3.871763432448848*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"0e838c78-fd3f-4cac-85d6-e3e028c807e2"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+    "\"32 / 50 / 21 / 09 / Friday / 09 / 3 / 2022 / 2020 / Millenium\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "50", ",", 
+           "32.706505`9.26720904000245"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}], ",", "\"SmearedUTC\"", ",", 
+       RowBox[{"{", 
+         RowBox[{
+          "\"Second\"", ",", "\" / \"", ",", "\"Minute\"", ",", "\" / \"", 
+           ",", "\"Hour\"", ",", "\" / \"", ",", "\"Day\"", ",", "\" / \"", 
+           ",", "\"DayName\"", ",", "\" / \"", ",", "\"Month\"", ",", 
+           "\" / \"", ",", "\"Quarter\"", ",", "\" / \"", ",", "\"Year\"", 
+           ",", "\" / \"", ",", "\"Decade\"", ",", "\" / \"", ",", 
+           "\"Millenium\""}], "}"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.871763417494789*^9, 3.8717634327221355`*^9}},
+ CellLabel->"Out[56]=",ExpressionUUID->"1da3a9b2-ddb2-48dc-ad1a-ac35a7e1dd49"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{
+   RowBox[{"DateFormat", "->", 
+    RowBox[{"Riffle", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Second\>\"", ",", "\"\<Minute\>\"", ",", "\"\<Hour\>\"", ",", 
+        "\"\<Day\>\"", ",", "\"\<DayName\>\"", ",", "\"\<Month\>\"", ",", 
+        "\"\<Quarter\>\"", ",", "\"\<Year\>\"", ",", "\"\<Decade\>\"", ",", 
+        "\"\<Millenium\>\""}], "}"}], ",", "\"\< / \>\""}], "]"}]}], ",", 
+   RowBox[{"TimeZone", "->", "\"\<Europe/Copenhagen\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717633665607643`*^9, 3.8717634765323668`*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"87d0a036-bbc1-46c8-b5e4-64cd9d39f3e1"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+    "\"17 / 51 / 03 / 10 / Saturday / 09 / 3 / 2022 / 2020 / Millenium\"", 
+     StyleBox["\"CEST\"", FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "10", ",", "3", ",", "51", ",", 
+           "17.8970176`9.005355607974204"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", "\"Europe/Copenhagen\"", ",", "\"SmearedUTC\"", 
+       ",", 
+       RowBox[{"{", 
+         RowBox[{
+          "\"Second\"", ",", "\" / \"", ",", "\"Minute\"", ",", "\" / \"", 
+           ",", "\"Hour\"", ",", "\" / \"", ",", "\"Day\"", ",", "\" / \"", 
+           ",", "\"DayName\"", ",", "\" / \"", ",", "\"Month\"", ",", 
+           "\" / \"", ",", "\"Quarter\"", ",", "\" / \"", ",", "\"Year\"", 
+           ",", "\" / \"", ",", "\"Decade\"", ",", "\" / \"", ",", 
+           "\"Millenium\""}], "}"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717634778970175`*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"3256077e-1434-4cbf-b0d4-d7b9ca17774a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"TimeSystem", "->", "\"\<TAI\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763492169516*^9, 3.8717635024256244`*^9}},
+ CellLabel->"In[58]:=",ExpressionUUID->"024ae6f5-8634-4e14-b220-ab0c66c9e56f"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 10 Sep 2022 01:52:19\"", 
+     StyleBox["\"TAI\"", FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "10", ",", "1", ",", "52", ",", 
+           "19.64756810000108`"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", "0.`", ",", "\"TAI\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717635026632*^9},
+ CellLabel->"Out[58]=",ExpressionUUID->"014b147b-7ac5-4e0e-a69e-5f0002c4dd31"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"TimeSystem", "->", "\"\<UTC\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763492169516*^9, 3.871763512060895*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"3a40c0a3-a8c2-4005-9673-fe24023044d6"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Fri 9 Sep 2022 21:51:52\"", 
+     StyleBox[
+      RowBox[{"\"UTC\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "51", ",", 
+           "52.24839210510254`"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}], ",", "\"UTC\""}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763512248392*^9},
+ CellLabel->"Out[59]=",ExpressionUUID->"4130bcb5-5af2-49aa-a9e9-f19a6a6df940"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateObject", "[", 
+  RowBox[{"TimeSystem", "->", "\"\<SmearedUTC\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763492169516*^9, 3.8717635197989717`*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"9c36c366-aa22-474c-962f-97297094e3b5"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Fri 9 Sep 2022 21:52:00\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2022", ",", "9", ",", "9", ",", "21", ",", "52", ",", 
+           "0.0018212`5.012932630796106"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717635200018215`*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"0485f51b-074f-4d94-8cca-f31b91b73564"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TimeObject", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8717635917453766`*^9, 3.871763593120673*^9}},
+ CellLabel->"In[61]:=",ExpressionUUID->"cb07e981-ba0c-47d9-ba32-e6d4cd9ab511"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"21:53:13\""}], 
+   RowBox[{"TimeObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"21", ",", "53", ",", "13.4306711`8.880672667617617"}], 
+         "}"}], ",", "\"Instant\""}], "]"}]},
+  "TimeObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717635934316826`*^9},
+ CellLabel->"Out[61]=",ExpressionUUID->"3823b6ab-d817-4014-8c40-36185ca4bab1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TimeObject", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "3"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.871763610164298*^9, 3.8717636214679327`*^9}},
+ CellLabel->"In[62]:=",ExpressionUUID->"6cc0e122-b051-4a78-a0f8-4c2597ea16b7"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     StyleBox["\"Minute: \"", "TimeObjectLabel"], "\"01:03\""}], 
+   RowBox[{"TimeObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"1", ",", "3"}], "}"}], ",", "\"Minute\""}], "]"}]},
+  "TimeObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717636221395383`*^9},
+ CellLabel->"Out[62]=",ExpressionUUID->"4945d41e-5dbf-49d3-befc-5f0b084676d1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RandomInteger", "[", 
+  RowBox[{
+   RowBox[{"{", "24", "}"}], ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717636260935493`*^9, 3.8717636378273726`*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"34b6cbcd-c3cf-40fe-895b-f87ebabc5e40"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"13", ",", "18", ",", "3"}], "}"}]], "Output",
+ CellChangeTimes->{3.8717636381555123`*^9},
+ CellLabel->"Out[63]=",ExpressionUUID->"034564e1-0740-458a-8476-9f97e37c8a1e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TimeObject", "[", 
+  RowBox[{"RandomInteger", "[", 
+   RowBox[{
+    RowBox[{"{", "24", "}"}], ",", "3"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717636392808275`*^9, 3.871763640563967*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"cf2ee792-a93c-403f-b834-3858f1ffd2df"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"17:01:20\""}], 
+   RowBox[{"TimeObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"17", ",", "1", ",", "20"}], "}"}], ",", "\"Instant\""}], 
+     "]"}]},
+  "TimeObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.8717636408477015`*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"55bdefd8-772e-4df5-8afd-a84cce8d5726"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TimeObject", "[", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{
+     RowBox[{"{", "24", "}"}], ",", "3"}], "]"}], "]"}], "+", 
+  TemplateBox[<|
+   "query" -> "13hr", "boxes" -> 
+    TemplateBox[{"13", "\"h\"", "hours", "\"Hours\""}, "Quantity", SyntaxForm -> 
+      Mod], "allassumptions" -> {}, "assumptions" -> {}, "open" -> {1, 2}, 
+    "querystate" -> {
+     "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+      0.8436159`7.377689749979719, "Messages" -> {}}, "contextinfo" -> 
+    Automatic, "version" -> 5|>,
+   "LinguisticAssistantTemplate"]}]], "Input",
+ CellChangeTimes->{{3.8717636392808275`*^9, 3.8717636457806873`*^9}},
+ CellLabel->"In[65]:=",ExpressionUUID->"653492a1-b538-46bd-a73c-e7f3424bdb7a"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     RowBox[{"\"14:09:18\"", 
+       StyleBox[
+        RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+          StyleBox[
+           RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}],
+         FontColor -> GrayLevel[0.5]]}]}], 
+   RowBox[{"TimeObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{"14", ",", "9", ",", "18"}], "}"}], ",", "\"Instant\"", ",", 
+       RowBox[{"-", "4.`"}]}], "]"}]},
+  "TimeObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.871763649227291*^9},
+ CellLabel->"Out[65]=",ExpressionUUID->"06a11767-ba15-4ec4-873a-5ff68b3b7ac7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TimeObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "3", ",", "2"}], "}"}], "]"}], "-", 
+  RowBox[{"TimeObject", "[", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "3", ",", "5"}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8717636537927756`*^9, 3.8717636712930565`*^9}},
+ CellLabel->"In[67]:=",ExpressionUUID->"27d7cafe-c656-4414-a7d9-49c8da869f7b"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"-", "9.000833333333333`"}], "\"h\"", "hours", "\"Hours\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.871763665827913*^9, 3.871763671558665*^9}},
+ CellLabel->"Out[67]=",ExpressionUUID->"8ba539b1-6412-4194-8a87-b15fdde140be"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"DateObject", "[", 
+     RowBox[{"{", 
+      RowBox[{"2002", ",", "2", ",", "18"}], "}"}], "]"}], ",", "Now"}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717637064141026`*^9, 3.8717637178151617`*^9}},
+ CellLabel->"In[68]:=",ExpressionUUID->"c60fc053-813c-4ac2-ab0c-85b1323cca6e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Mon 18 Feb 2002 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 9 Sep 2022 21:55:18\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Mon 18 Feb 2002 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 9 Sep 2022 21:55:18\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Instant\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"-", "4.`"}], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{2002, 2, 18, 0, 0, 0.}, {
+     2022, 9, 9, 21, 55, 18.112154`9.010545042210946}}}, "Instant", 
+   "Gregorian", -4.],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.871763718143021*^9},
+ CellLabel->"Out[68]=",ExpressionUUID->"59767c0c-e46e-4a9e-b9cc-ebde19b883f7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TimelinePlot", "[", 
+  RowBox[{"DateInterval", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"DateObject", "[", 
+      RowBox[{"{", 
+       RowBox[{"2002", ",", "2", ",", "18"}], "}"}], "]"}], ",", "Now"}], 
+    "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8717637229688053`*^9, 3.8717637258203297`*^9}},
+ CellLabel->"In[69]:=",ExpressionUUID->"41ddeee1-dc92-4ae5-876c-e118afdec376"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {AbsolutePointSize[0], Opacity[0], 
+    PointBox[NCache[{{3.2229792*^9, 1}, {
+       3.871749326179305*^9, Rational[3, 2]}}, {{3.2229792*^9, 1}, {
+       3.871749326179305*^9, 1.5}}]], 
+    PointBox[NCache[{{3.2229792*^9, Rational[-1, 2]}, {
+       3.871749326179305*^9, 0}}, {{3.2229792*^9, -0.5}, {
+       3.871749326179305*^9, 0}}]]}, {}, {
+    {PointSize[0], Opacity[0], 
+     PointBox[{{3.2229792*^9, 1}, {3.871749326179305*^9, 1}}]}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], AbsolutePointSize[7], 
+     AbsoluteThickness[1.6], Opacity[1], 
+     TagBox[
+      TooltipBox[
+       TagBox[
+        DynamicBox[{
+          FEPrivate`If[
+           CurrentValue["MouseOver"], 
+           Directive[
+            EdgeForm[
+             Directive[
+              RGBColor[0.368417, 0.506779, 0.709798], 
+              Thickness[Large], 
+              Opacity[0.2]]], 
+            FaceForm[{
+              RGBColor[
+              0.24561133333333335`, 0.3378526666666667, 0.4731986666666667], 
+              Opacity[1]}], 
+            CapForm["Round"], 
+            AbsoluteThickness[2.5], 
+            AbsolutePointSize[10], 
+            FrameBoxOptions -> {
+             BoxFrame -> 2.5, FrameStyle -> Automatic}], {}, {}], {{
+            Directive[
+             Opacity[0.2]], {
+             Directive[
+              Opacity[0.2]], 
+             EdgeForm[], 
+             
+             RectangleBox[{3.2229792*^9, 1}, {
+              3.871749326179305*^9, 1}]}}, {{}, {{{{}, {{{
+                  GrayLevel[1], 
+                  AbsoluteThickness[2], 
+                  LineBox[{{
+                    Offset[{0, -1}, {3.2229792*^9, 1}], 
+                    Offset[{0, -1}, {3.871749326179305*^9, 1}]}, {
+                    Offset[{0, 1}, {3.2229792*^9, 1}], 
+                    Offset[{0, 1}, {3.871749326179305*^9, 1}]}}]}, {
+                  AbsolutePointSize[10], 
+                  GrayLevel[1], 
+                  PointBox[{{3.2229792*^9, 1}, {3.871749326179305*^9, 1}}]}, 
+                 PointBox[{{3.2229792*^9, 1}, {3.871749326179305*^9, 1}}], 
+                 
+                 LineBox[{{3.2229792*^9, 1}, {
+                   3.871749326179305*^9, 1}}]}}, {}, {{
+                 AbsolutePointSize[4], 
+                 GrayLevel[1], 
+                 
+                 PointBox[{{3.2229792*^9, 1}, {
+                   3.871749326179305*^9, 1}}]}}}, {}}, {{}, {}}}}}},
+         ImageSizeCache->{{43.42000000000053, 
+          556.5800000000008}, {-19.140208333333334`, -7.140208333333334}}],
+        "DelayedMouseEffectStyle"],
+       StyleBox[
+        TagBox[
+         GridBox[{{"\"start: \"", 
+            TemplateBox[{
+              RowBox[{"\"02/18/2002\""}], 
+              RowBox[{"DateObject", "[", 
+                RowBox[{
+                  RowBox[{"{", 
+                    RowBox[{"2002", ",", "2", ",", "18"}], "}"}], ",", 
+                  "\"Day\"", ",", "\"Gregorian\"", ",", 
+                  RowBox[{"-", "4.`"}], ",", "\"SmearedUTC\"", ",", 
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Month\"", ",", "\"/\"", ",", "\"Day\"", ",", "\"/\"", 
+                    ",", "\"Year\""}], "}"}]}], "]"}]}, "DateObject", 
+             Editable -> False]}, {"\"end: \"", 
+            TemplateBox[{
+              RowBox[{"\"Fri 9 Sep 2022 21:55:26\"", 
+                StyleBox[
+                 RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                   StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+              RowBox[{"DateObject", "[", 
+                RowBox[{
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "2022", ",", "9", ",", "9", ",", "21", ",", "55", ",", 
+                    "26.17930507659912`"}], "}"}], ",", "\"Instant\"", ",", 
+                  "\"Gregorian\"", ",", 
+                  RowBox[{"-", "4.`"}], ",", "\"SmearedUTC\"", ",", 
+                  RowBox[{"{", "\"DateTimeShort\"", "}"}]}], "]"}]}, 
+             "DateObject", Editable -> False]}}, RowSpacings -> 1, 
+          ColumnSpacings -> 0, RowAlignments -> Baseline, ColumnAlignments -> 
+          Right], 
+         Function[BoxForm`e$, 
+          TableForm[
+          BoxForm`e$, TableAlignments -> Right, TableSpacing -> {1, 0}]]], {
+         GrayLevel[0.3]}, StripOnInput -> False]],
+      Annotation[#, 
+       Style[
+        TableForm[{{"start: ", 
+           
+           DateObject[{2002, 2, 18}, "Day", "Gregorian", -4., "SmearedUTC", {
+            "Month", "/", "Day", "/", "Year"}]}, {"end: ", 
+           
+           DateObject[{2022, 9, 9, 21, 55, 26.17930507659912}, "Instant", 
+            "Gregorian", -4., "SmearedUTC", {"DateTimeShort"}]}}, 
+         TableAlignments -> Right, TableSpacing -> {1, 0}], {
+         GrayLevel[0.3]}], "Tooltip"]& ]}, {{}, {}}}, {}, {}},
+  AspectRatio->NCache[
+    Rational[1, 20], 0.05],
+  Axes->{False, False},
+  AxesOrigin->{0, 0},
+  Frame->{{None, None}, {True, None}},
+  FrameTicks->
+   FrontEndValueCache[{{None, None}, {
+     Charting`getDateTicks[Automatic, {Automatic}, 
+       (Map[DateList, {
+         SlotSequence[1]}]& )[
+        SlotSequence[1]], None, 7, {{0.01, 0}, {0.005, 0}}, Automatic]& , 
+      Automatic}}, {{None, None}, {{{3.1556736*^9, 
+        FormBox["\"2000\"", TraditionalForm], {0.006666666666666666, 0}}, {
+       3.3135264*^9, 
+        FormBox["\"2005\"", TraditionalForm], {0.006666666666666666, 0}}, {
+       3.4712928*^9, 
+        FormBox["\"2010\"", TraditionalForm], {0.006666666666666666, 0}}, {
+       3.6290592*^9, 
+        FormBox["\"2015\"", TraditionalForm], {0.006666666666666666, 0}}, {
+       3.7868256*^9, 
+        FormBox["\"2020\"", TraditionalForm], {0.006666666666666666, 0}}, {
+       3.9446784*^9, 
+        FormBox["\"2025\"", TraditionalForm], {0.006666666666666666, 0}}, {
+       3.1556736*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.187296*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.218832*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.250368*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.281904*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.3135264*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.3450624*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.3765984*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.4081344*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.4397568*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.4712928*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.5028288*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.5343648*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.5659872*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.5975232*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.6290592*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.6605952*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.6922176*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.7237536*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.7552896*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.7868256*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.818448*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.849984*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.88152*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}, {3.913056*^9, 
+        FormBox[
+         TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+        0.006666666666666666, 0}}}, Automatic}}],
+  GridLines->{None, None},
+  ImagePadding->All,
+  ImageSize->{600, Automatic},
+  PlotRange->{{All, All}, {0, All}},
+  PlotRangePadding->{{
+     Scaled[0.08], 
+     Scaled[0.08]}, {None, 
+     Scaled[0.05]}},
+  Ticks->{{{3.1556736*^9, 
+      FormBox["\"2000\"", TraditionalForm], {0.006666666666666666, 0}}, {
+     3.3135264*^9, 
+      FormBox["\"2005\"", TraditionalForm], {0.006666666666666666, 0}}, {
+     3.4712928*^9, 
+      FormBox["\"2010\"", TraditionalForm], {0.006666666666666666, 0}}, {
+     3.6290592*^9, 
+      FormBox["\"2015\"", TraditionalForm], {0.006666666666666666, 0}}, {
+     3.7868256*^9, 
+      FormBox["\"2020\"", TraditionalForm], {0.006666666666666666, 0}}, {
+     3.9446784*^9, 
+      FormBox["\"2025\"", TraditionalForm], {0.006666666666666666, 0}}, {
+     3.1556736*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.187296*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.218832*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.250368*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.281904*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.3135264*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.3450624*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.3765984*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.4081344*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.4397568*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.4712928*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.5028288*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.5343648*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.5659872*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.5975232*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.6290592*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.6605952*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.6922176*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.7237536*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.7552896*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.7868256*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.818448*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.849984*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.88152*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}, {3.913056*^9, 
+      FormBox[
+       TemplateBox[{0, 0}, "Spacer2"], TraditionalForm], {
+      0.006666666666666666, 0}}}, None}]], "Output",
+ CellChangeTimes->{3.871763726476183*^9},
+ CellLabel->"Out[69]=",ExpressionUUID->"3eb47884-0b5a-47f9-916b-6ac9cb8b7ca6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", "Today", "]"}]], "Input",
+ CellChangeTimes->{{3.8717637316278343`*^9, 3.871763734668743*^9}},
+ CellLabel->"In[70]:=",ExpressionUUID->"9d0ddbc7-0a13-4028-8663-a95ce6e650e4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 9 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sat 10 Sep 2022 00:00:00\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 9 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sat 10 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Instant\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"-", "4.`"}], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{2022, 9, 9, 0, 0, 0.}, {2022, 9, 10, 0, 0, 0.}}}, "Instant",
+    "Gregorian", -4.],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8717637349653378`*^9},
+ CellLabel->"Out[70]=",ExpressionUUID->"f7542dce-355c-4b78-9a2c-30591804e93e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", "Yesterday", "]"}]], "Input",
+ CellChangeTimes->{{3.8717637316278343`*^9, 3.8717637388770175`*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"434a4427-c518-4aea-97bb-e7a0988c38c6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Thu 8 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 9 Sep 2022 00:00:00\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Thu 8 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 9 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Instant\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"-", "4.`"}], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{2022, 9, 8, 0, 0, 0.}, {2022, 9, 9, 0, 0, 0.}}}, "Instant", 
+   "Gregorian", -4.],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8717637391113853`*^9},
+ CellLabel->"Out[71]=",ExpressionUUID->"9a59af3c-482e-448d-8edc-70e096337d22"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", "Tomorrow", "]"}]], "Input",
+ CellChangeTimes->{{3.8717637316278343`*^9, 3.871763744617326*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"19394ae1-87bf-40c3-a488-3e63c55c33ae"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {
+                10.869016023673117`, {0., 10.869016023673117`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {4., 11.222067992791025`}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sat 10 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 11 Sep 2022 00:00:00\"", "SummaryItem"]}]}}, 
+             AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {
+                10.869016023673117`, {0., 10.869016023673117`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {4., 11.222067992791025`}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sat 10 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Until: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 11 Sep 2022 00:00:00\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Instant\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"-", "4.`"}], "SummaryItem"]}]}}, AutoDelete -> 
+             False, BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{2022, 9, 10, 0, 0, 0.}, {2022, 9, 11, 0, 0, 0.}}}, 
+   "Instant", "Gregorian", -4.],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8717637449451733`*^9},
+ CellLabel->"Out[72]=",ExpressionUUID->"f61e4780-217b-456d-809e-6b18bfcd515b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateInterval", "[", "Tomorrow", "]"}], "-", "Now"}]], "Input",
+ CellChangeTimes->{{3.8717637316278343`*^9, 3.8717637592216883`*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"f3f5fcb2-2dc3-4479-ae5e-e68584ed788a"],
+
+Cell[BoxData[
+ TemplateBox[{
+   InterpretationBox[
+    RowBox[{"(", "\[InvisibleSpace]", "0.08611668361005959`", 
+      StyleBox["\"to\"", FontSize -> Inherited - 2], "1.0861166836100598`", 
+      "\[InvisibleSpace]", ")"}], 
+    Interval[{0.08611668361005959, 1.0861166836100598`}], Selectable -> 
+    False], "\"days\"", "days", "\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.871763759518536*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"f09e931f-233d-487b-9060-64f4251818ad"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateInterval", "[", 
+   RowBox[{"DateObject", "[", "\"\<25 December 2022\>\"", "]"}], "]"}], "-", 
+  "Now"}]], "Input",
+ CellChangeTimes->{{3.8717637316278343`*^9, 3.8717637723735633`*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"e628ff18-3b9d-4278-aaf8-f7b2df9c7025"],
+
+Cell[BoxData[
+ TemplateBox[{
+   InterpretationBox[
+    RowBox[{"(", "\[InvisibleSpace]", "106.08596410091826`", 
+      StyleBox["\"to\"", FontSize -> Inherited - 2], "107.08596410091829`", 
+      "\[InvisibleSpace]", ")"}], 
+    Interval[{106.08596410091826`, 107.08596410091829`}], Selectable -> 
+    False], "\"days\"", "days", "\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.871763772701681*^9},
+ CellLabel->"Out[74]=",ExpressionUUID->"8f371a28-301f-4249-9dc5-d923362b5952"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateInterval", "[", 
+   RowBox[{"DateObject", "[", "\"\<25 December 2022 11:00 am\>\"", "]"}], 
+   "]"}], "-", "Now"}]], "Input",
+ CellChangeTimes->{{3.8717637316278343`*^9, 3.8717637825570536`*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"b30a0be7-4c8c-4a1e-b6e2-e6b25c48d03f"],
+
+Cell[BoxData[
+ TemplateBox[{
+   InterpretationBox[
+    RowBox[{"(", "\[InvisibleSpace]", "106.54418029368475`", 
+      StyleBox["\"to\"", FontSize -> Inherited - 2], "106.54487473812922`", 
+      "\[InvisibleSpace]", ")"}], 
+    Interval[{106.54418029368475`, 106.54487473812922`}], Selectable -> 
+    False], "\"days\"", "days", "\"Days\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.871763782822625*^9},
+ CellLabel->"Out[75]=",ExpressionUUID->"edfc274e-3365-47cc-a7d9-7c82de5b54dd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", 
+  RowBox[{
+   RowBox[{"CurrentDate", "[", "\"\<Month\>\"", "]"}], ",", "\"\<Day\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.871763787298809*^9, 3.8717637958913603`*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"b549a011-93d7-435d-b442-290bd19aff0d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {
+                10.869016023673117`, {0., 10.869016023673117`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {4., 11.222067992791025`}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Thu 1 Sep 2022\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 30 Sep 2022\"", "SummaryItem"]}]}}, AutoDelete -> 
+             False, BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {
+                10.869016023673117`, {0., 10.869016023673117`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {4., 11.222067992791025`}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Thu 1 Sep 2022\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Fri 30 Sep 2022\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Day\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["None", "SummaryItem"]}]}}, AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{2022, 9, 1}, {2022, 9, 30}}}, "Day"],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8717637961723385`*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"4331416e-838c-4cb1-9d44-05c3d617d972"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CalendarData", "[", "\"\<ArithemticCalendar\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.871763836834982*^9, 3.8717638431489415`*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"dd061c0b-dcf0-483e-a656-7a6de7ace22b"],
+
+Cell[BoxData[
+ RowBox[{"CalendarData", "[", "\<\"ArithemticCalendar\"\>", "]"}]], "Output",
+ CellChangeTimes->{3.8717638465825653`*^9},
+ CellLabel->"Out[77]=",ExpressionUUID->"da0b720c-d6a2-4333-a76d-51d53d84934a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CalendarData", "[", "\"\<AstronomicalCalendar\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.871763836834982*^9, 3.8717638514581594`*^9}},
+ CellLabel->"In[78]:=",ExpressionUUID->"0cde6e8d-9a81-437e-84a8-fa8d4a1bf4e0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"AstronomicalFrench\"\>", ",", "\<\"AstronomicalPersian\"\>", 
+   ",", "\<\"Babylonian\"\>", ",", "\<\"Chinese\"\>", 
+   ",", "\<\"ObservationalHebrew\"\>", ",", "\<\"ObservationalIslamic\"\>", 
+   ",", "\<\"OldHinduLunisolar\"\>", ",", "\<\"OldHinduSolar\"\>", 
+   ",", "\<\"Samaritan\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8717638517175045`*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"08219e2b-ca65-43ce-a766-b94cd9db1dfe"]
+}, Open  ]]
+},
+WindowSize->{588.6, 585.6},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"23c01947-b082-4a12-8438-9ba39c49a4a3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 202, 3, 28, "Input",ExpressionUUID->"da65f100-017a-4884-a0c7-969c9c25669f"],
+Cell[785, 27, 734, 19, 42, "Output",ExpressionUUID->"1f971cc2-d9ee-495f-b7cb-f0fdd7d971a9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1556, 51, 227, 3, 28, "Input",ExpressionUUID->"067684bc-2f84-49df-b8d8-208f0e7699bd"],
+Cell[1786, 56, 392, 9, 28, "Message",ExpressionUUID->"41f08030-0881-4665-aa9c-5f4ba86664c9"],
+Cell[2181, 67, 204, 3, 32, "Output",ExpressionUUID->"720808f7-acd9-47e7-9152-46782d611770"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2422, 75, 218, 3, 28, "Input",ExpressionUUID->"9f82f8f4-6b7f-4aaf-993e-fbcaa256a79d"],
+Cell[2643, 80, 385, 9, 28, "Message",ExpressionUUID->"edcf9dc5-ba21-4c84-a56b-dea97450952e"],
+Cell[3031, 91, 197, 3, 32, "Output",ExpressionUUID->"5108128d-67a0-4b11-9464-dd6218a1a74e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3265, 99, 243, 4, 28, "Input",ExpressionUUID->"a6eaf4d3-0dad-4976-bddf-1da070d21d48"],
+Cell[3511, 105, 510, 14, 42, "Output",ExpressionUUID->"085cfd1c-150b-4f22-8c7d-7a0e82ab8bf1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4058, 124, 245, 4, 28, "Input",ExpressionUUID->"cda11190-16fe-4f6e-860f-e00bbf22610e"],
+Cell[4306, 130, 788, 21, 42, "Output",ExpressionUUID->"c1b17600-ca09-45af-87f6-b9335c5398a4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5131, 156, 252, 4, 28, "Input",ExpressionUUID->"083c3750-0d02-44cb-8c76-dc76313b5ab6"],
+Cell[5386, 162, 410, 10, 28, "Message",ExpressionUUID->"c9cbd577-734b-43a2-9dcf-80fc8fc24ab1"],
+Cell[5799, 174, 453, 10, 28, "Message",ExpressionUUID->"15cf7f7c-3248-4b68-a51d-143664e5e3d1"],
+Cell[6255, 186, 844, 21, 42, "Output",ExpressionUUID->"1ba0a415-215d-47fc-98dd-7deff258b97c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7136, 212, 245, 4, 28, "Input",ExpressionUUID->"20ab3bdb-e86c-4ede-84b0-b2481a4d9865"],
+Cell[7384, 218, 719, 18, 42, "Output",ExpressionUUID->"12a71201-6cd3-4d02-b71a-237974fb9ccf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8140, 241, 242, 4, 28, "Input",ExpressionUUID->"5bf22a42-54f1-4fd3-bd4a-d55c5c4aac97"],
+Cell[8385, 247, 721, 19, 42, "Output",ExpressionUUID->"87bcef10-8d57-4383-8d16-338ee3db9f99"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9143, 271, 244, 4, 28, "Input",ExpressionUUID->"6306437e-fea9-4396-be2a-609114cdf949"],
+Cell[9390, 277, 442, 12, 42, "Output",ExpressionUUID->"9a99f083-d995-4501-9e20-ea1c1743d7b2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9869, 294, 247, 4, 28, "Input",ExpressionUUID->"06f91a56-3a6e-4872-b1b0-429bd3c287d9"],
+Cell[10119, 300, 431, 12, 42, "Output",ExpressionUUID->"81719b03-fa00-419e-b5d3-359b62c2791c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10587, 317, 249, 4, 28, "Input",ExpressionUUID->"e3654767-1d18-41cd-b27f-98e2e8b4ca8a"],
+Cell[10839, 323, 484, 13, 42, "Output",ExpressionUUID->"c69eb076-5f09-496c-86fe-1c910cedcb11"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11360, 341, 246, 4, 28, "Input",ExpressionUUID->"b5d6ae5e-85e5-4df6-b5cd-0ef896ad6581"],
+Cell[11609, 347, 437, 11, 42, "Output",ExpressionUUID->"749dd361-d498-45c1-ac44-f08eb80e95ed"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12083, 363, 297, 5, 28, "Input",ExpressionUUID->"caafba86-df5e-4a85-818c-e8b22c0835fa"],
+Cell[12383, 370, 448, 12, 42, "Output",ExpressionUUID->"5c7d8987-285e-4505-ab7a-67a6476f2829"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12868, 387, 303, 5, 28, "Input",ExpressionUUID->"62d4d983-f1ab-4fc2-b055-897cf6fc6ee3"],
+Cell[13174, 394, 460, 12, 42, "Output",ExpressionUUID->"c5f95055-29de-4154-bbbf-6db5c491896e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13671, 411, 261, 4, 28, "Input",ExpressionUUID->"9e493276-cee3-4a81-b5b3-a8358033390d"],
+Cell[13935, 417, 473, 12, 42, "Output",ExpressionUUID->"22787fff-b5d9-468e-b7e6-f18aea298d65"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14445, 434, 241, 4, 31, "Input",ExpressionUUID->"e23ae183-268c-44d4-b13f-3037943a6504"],
+Cell[14689, 440, 161, 2, 32, "Output",ExpressionUUID->"cf758e03-9f11-46c2-ba0b-ca14cdb2e436"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14887, 447, 277, 5, 31, "Input",ExpressionUUID->"a9e22756-73e1-4e03-bced-3790e0414650"],
+Cell[15167, 454, 700, 18, 42, "Output",ExpressionUUID->"26294307-52e5-43ac-8c8c-84be43593769"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15904, 477, 275, 5, 31, "Input",ExpressionUUID->"1e4c17ef-d7dc-4275-a3e1-9efa5054ae69"],
+Cell[16182, 484, 701, 18, 42, "Output",ExpressionUUID->"b2c7d973-0154-42a2-99b7-9517cbbb6767"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16920, 507, 277, 5, 31, "Input",ExpressionUUID->"eef1a06a-6cd9-4474-88ec-1e954614cfca"],
+Cell[17200, 514, 701, 18, 42, "Output",ExpressionUUID->"4060449f-e933-4631-873e-f6d1f137f2f2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17938, 537, 275, 5, 31, "Input",ExpressionUUID->"497b3176-6613-41bb-ac32-cdee6aa75794"],
+Cell[18216, 544, 700, 18, 42, "Output",ExpressionUUID->"371dc005-378c-4d12-8802-761622392c0f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18953, 567, 277, 5, 31, "Input",ExpressionUUID->"4c5ce390-2a98-4640-a82c-6f68360300d5"],
+Cell[19233, 574, 699, 18, 42, "Output",ExpressionUUID->"2c3a61d6-b550-4a81-97df-c5e430ffcca8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19969, 597, 275, 5, 31, "Input",ExpressionUUID->"814eb142-21b5-4a98-b51c-3c97937bf5ad"],
+Cell[20247, 604, 698, 18, 42, "Output",ExpressionUUID->"e2956a8d-e020-47b8-af65-d15975db9b5a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20982, 627, 275, 5, 31, "Input",ExpressionUUID->"49295fb2-84b2-4873-8531-8e5134a4fb51"],
+Cell[21260, 634, 699, 18, 42, "Output",ExpressionUUID->"19f3811d-0cc6-4900-81d2-715763f81789"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21996, 657, 275, 5, 31, "Input",ExpressionUUID->"0ac243ac-7e87-4645-83a5-570e762a96fc"],
+Cell[22274, 664, 701, 18, 42, "Output",ExpressionUUID->"18587e72-85aa-4cf2-bc47-fb5de4e702ae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23012, 687, 276, 5, 31, "Input",ExpressionUUID->"8270ace7-12fa-46a3-b15a-f1960ace07d2"],
+Cell[23291, 694, 699, 18, 42, "Output",ExpressionUUID->"d6805e3b-a5ee-410a-a1d0-553c7a0d1569"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24027, 717, 274, 5, 31, "Input",ExpressionUUID->"6d161bff-a6be-44b5-ad58-0b6def1ecba2"],
+Cell[24304, 724, 686, 17, 42, "Output",ExpressionUUID->"8e585dd6-5c8d-4898-baaf-4eb9e7b9719f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25027, 746, 276, 5, 31, "Input",ExpressionUUID->"8e1bb118-33b3-4211-bec1-599f624aaa34"],
+Cell[25306, 753, 701, 18, 42, "Output",ExpressionUUID->"dfa708a9-7a4d-4d2a-8ae5-e528e0f4f20f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26044, 776, 273, 5, 31, "Input",ExpressionUUID->"883e6aa0-705e-4c2f-bc1e-2200b735e041"],
+Cell[26320, 783, 699, 18, 42, "Output",ExpressionUUID->"2da26dc7-d6f9-46a2-83a1-34981b7d0d6e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27056, 806, 274, 5, 31, "Input",ExpressionUUID->"b12e76ff-1f6d-497f-b711-9f4625d75349"],
+Cell[27333, 813, 702, 18, 42, "Output",ExpressionUUID->"b2d4b915-08c3-40e4-ad58-53427a80e2d7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28072, 836, 260, 5, 28, "Input",ExpressionUUID->"bb98bc2c-8a33-454d-93cb-3c337fe6ab70"],
+Cell[28335, 843, 366, 10, 42, "Output",ExpressionUUID->"30a32452-edb6-4bc9-8ea2-696f95ccb572"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28738, 858, 236, 4, 28, "Input",ExpressionUUID->"6e1de510-79cc-4456-a28d-15b76f7411c8"],
+Cell[28977, 864, 380, 10, 42, "Output",ExpressionUUID->"20ad5ee5-d292-4ac5-b581-3d9a81f90a97"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29394, 879, 738, 16, 43, "Input",ExpressionUUID->"9a7542cd-49e2-4016-8d07-91419a9d99aa"],
+Cell[30135, 897, 388, 11, 42, "Output",ExpressionUUID->"7b79c860-c534-4bf5-bd78-b202920266a8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30560, 913, 330, 7, 28, "Input",ExpressionUUID->"e22c6ae9-59bc-409c-be7d-e78045230012"],
+Cell[30893, 922, 219, 4, 45, "Output",ExpressionUUID->"fd3e00d2-7964-461f-8443-4ba3adaee9a1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31149, 931, 339, 7, 28, "Input",ExpressionUUID->"b04c0b7b-943d-497b-b4a0-0c8e27d0c949"],
+Cell[31491, 940, 220, 4, 45, "Output",ExpressionUUID->"8bbf6b59-a269-42fa-9727-34d3b6498a79"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31748, 949, 672, 14, 49, "Input",ExpressionUUID->"14e75732-ed37-4b8e-a4db-18023fefb2f8"],
+Cell[32423, 965, 717, 19, 42, "Output",ExpressionUUID->"2cb72357-327e-4df5-87d2-5a82cd5bfcce"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33177, 989, 292, 6, 28, "Input",ExpressionUUID->"e1d513ae-d6e0-40fd-b70d-dfe6b9e02b35"],
+Cell[33472, 997, 216, 4, 41, "Output",ExpressionUUID->"d20e6301-c68b-4564-acad-b5a31872b1bf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33725, 1006, 327, 7, 28, "Input",ExpressionUUID->"8b1eb9b6-e807-45bc-a836-4d560fe3f654"],
+Cell[34055, 1015, 219, 4, 41, "Output",ExpressionUUID->"bd2ccedc-5bf7-4d9e-ae7e-50800ecc0cf2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34311, 1024, 270, 5, 28, "Input",ExpressionUUID->"c4fb636a-13f9-4e2a-8153-e2f9f4e108df"],
+Cell[34584, 1031, 380, 10, 42, "Output",ExpressionUUID->"cae92929-19d2-404e-9850-4cc595156519"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35001, 1046, 246, 4, 28, "Input",ExpressionUUID->"70801f34-a4d0-44ec-ae79-d4f82d412b51"],
+Cell[35250, 1052, 722, 18, 42, "Output",ExpressionUUID->"4718eb8c-851a-427d-8fb5-cb147e79b4fd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36009, 1075, 247, 4, 28, "Input",ExpressionUUID->"752c7994-8883-48ed-8ac0-768cce7ee261"],
+Cell[36259, 1081, 701, 18, 42, "Output",ExpressionUUID->"ee5d58c5-cb98-43e4-9a98-1def83f77a36"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36997, 1104, 357, 7, 67, "Input",ExpressionUUID->"ff6e902f-37cb-4a93-9cf7-958170ddffb4"],
+Cell[37357, 1113, 447, 12, 42, "Output",ExpressionUUID->"7a5ee98c-b550-445b-ab41-df9348c07b6e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37841, 1130, 437, 9, 67, "Input",ExpressionUUID->"2275f4e7-39a5-47bb-a190-2bd16f6c1ae8"],
+Cell[38281, 1141, 449, 12, 42, "Output",ExpressionUUID->"b78dac83-d3f4-47da-9bd5-bf46b1e23159"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38767, 1158, 432, 9, 67, "Input",ExpressionUUID->"3d7b180d-7f8e-4d13-ba70-21956ec8aa00"],
+Cell[39202, 1169, 712, 18, 42, "Output",ExpressionUUID->"94f33a9e-1213-4e0b-87a7-6b00e8a216ca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39951, 1192, 431, 9, 67, "Input",ExpressionUUID->"a4bf37da-da73-4abe-ac7e-795cd86d992b"],
+Cell[40385, 1203, 702, 18, 42, "Output",ExpressionUUID->"03e4a308-a51a-4f28-9851-f0c9c54cded2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41124, 1226, 434, 9, 67, "Input",ExpressionUUID->"6ab68fc5-f528-4b74-9dd6-23d432c35a28"],
+Cell[41561, 1237, 708, 18, 42, "Output",ExpressionUUID->"9e155751-5388-4ab5-97f5-88bc4357eaaa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42306, 1260, 318, 6, 28, "Input",ExpressionUUID->"f0823755-cb1e-4280-b200-c32a8bc9f986"],
+Cell[42627, 1268, 824, 21, 42, "Output",ExpressionUUID->"20fa3703-883d-4174-9c98-d0e15973c575"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43488, 1294, 312, 7, 28, "Input",ExpressionUUID->"27ed3ad6-e069-4d6d-9e33-ef1d1b12e71b"],
+Cell[43803, 1303, 239, 5, 32, "Output",ExpressionUUID->"19817d98-73f8-4110-b80e-15add1e916ff"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44079, 1313, 397, 9, 28, "Input",ExpressionUUID->"29a78a31-5227-484f-ab4f-ae8442b577fe"],
+Cell[44479, 1324, 874, 22, 42, "Output",ExpressionUUID->"d2dbc1ef-38d5-4de2-9e36-bc513c497595"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45390, 1351, 557, 12, 86, "Input",ExpressionUUID->"103c0768-b100-4f0b-bd40-c2a92a8cdcf4"],
+Cell[45950, 1365, 1180, 26, 42, "Output",ExpressionUUID->"30179beb-fae7-4eb0-b1f0-0cf8d8896207"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47167, 1396, 606, 13, 86, "Input",ExpressionUUID->"0e838c78-fd3f-4cac-85d6-e3e028c807e2"],
+Cell[47776, 1411, 1273, 28, 42, "Output",ExpressionUUID->"1da3a9b2-ddb2-48dc-ad1a-ac35a7e1dd49"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49086, 1444, 693, 14, 105, "Input",ExpressionUUID->"87d0a036-bbc1-46c8-b5e4-64cd9d39f3e1"],
+Cell[49782, 1460, 1118, 24, 42, "Output",ExpressionUUID->"3256077e-1434-4cbf-b0d4-d7b9ca17774a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50937, 1489, 253, 4, 28, "Input",ExpressionUUID->"024ae6f5-8634-4e14-b220-ab0c66c9e56f"],
+Cell[51193, 1495, 576, 14, 42, "Output",ExpressionUUID->"014b147b-7ac5-4e0e-a69e-5f0002c4dd31"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51806, 1514, 251, 4, 28, "Input",ExpressionUUID->"3a40c0a3-a8c2-4005-9673-fe24023044d6"],
+Cell[52060, 1520, 739, 19, 42, "Output",ExpressionUUID->"4130bcb5-5af2-49aa-a9e9-f19a6a6df940"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52836, 1544, 260, 4, 28, "Input",ExpressionUUID->"9c36c366-aa22-474c-962f-97297094e3b5"],
+Cell[53099, 1550, 734, 19, 42, "Output",ExpressionUUID->"0485f51b-074f-4d94-8cca-f31b91b73564"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53870, 1574, 205, 3, 28, "Input",ExpressionUUID->"cb07e981-ba0c-47d9-ba32-e6d4cd9ab511"],
+Cell[54078, 1579, 414, 11, 42, "Output",ExpressionUUID->"3823b6ab-d817-4014-8c40-36185ca4bab1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54529, 1595, 257, 5, 28, "Input",ExpressionUUID->"6cc0e122-b051-4a78-a0f8-4c2597ea16b7"],
+Cell[54789, 1602, 412, 11, 42, "Output",ExpressionUUID->"4945d41e-5dbf-49d3-befc-5f0b084676d1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55238, 1618, 263, 5, 28, "Input",ExpressionUUID->"34b6cbcd-c3cf-40fe-895b-f87ebabc5e40"],
+Cell[55504, 1625, 208, 4, 32, "Output",ExpressionUUID->"034564e1-0740-458a-8476-9f97e37c8a1e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55749, 1634, 300, 6, 28, "Input",ExpressionUUID->"cf2ee792-a93c-403f-b834-3858f1ffd2df"],
+Cell[56052, 1642, 383, 11, 42, "Output",ExpressionUUID->"55bdefd8-772e-4df5-8afd-a84cce8d5726"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[56472, 1658, 754, 16, 43, "Input",ExpressionUUID->"653492a1-b538-46bd-a73c-e7f3424bdb7a"],
+Cell[57229, 1676, 631, 17, 42, "Output",ExpressionUUID->"06a11767-ba15-4ec4-873a-5ff68b3b7ac7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[57897, 1698, 391, 9, 28, "Input",ExpressionUUID->"27d7cafe-c656-4414-a7d9-49c8da869f7b"],
+Cell[58291, 1709, 271, 5, 38, "Output",ExpressionUUID->"8ba539b1-6412-4194-8a87-b15fdde140be"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58599, 1719, 373, 9, 28, "Input",ExpressionUUID->"c60fc053-813c-4ac2-ab0c-85b1323cca6e"],
+Cell[58975, 1730, 4980, 103, 64, "Output",ExpressionUUID->"59767c0c-e46e-4a9e-b9cc-ebde19b883f7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63992, 1838, 418, 10, 28, "Input",ExpressionUUID->"41ddeee1-dc92-4ae5-876c-e118afdec376"],
+Cell[64413, 1850, 13170, 312, 61, "Output",ExpressionUUID->"3eb47884-0b5a-47f9-916b-6ac9cb8b7ca6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77620, 2167, 216, 3, 28, "Input",ExpressionUUID->"9d0ddbc7-0a13-4028-8663-a95ce6e650e4"],
+Cell[77839, 2172, 4949, 102, 64, "Output",ExpressionUUID->"f7542dce-355c-4b78-9a2c-30591804e93e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82825, 2279, 222, 3, 28, "Input",ExpressionUUID->"434a4427-c518-4aea-97bb-e7a0988c38c6"],
+Cell[83050, 2284, 4946, 102, 64, "Output",ExpressionUUID->"9a59af3c-482e-448d-8edc-70e096337d22"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[88033, 2391, 219, 3, 28, "Input",ExpressionUUID->"19394ae1-87bf-40c3-a488-3e63c55c33ae"],
+Cell[88255, 2396, 5245, 110, 64, "Output",ExpressionUUID->"f61e4780-217b-456d-809e-6b18bfcd515b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[93537, 2511, 246, 4, 28, "Input",ExpressionUUID->"f3f5fcb2-2dc3-4479-ae5e-e68584ed788a"],
+Cell[93786, 2517, 490, 10, 41, "Output",ExpressionUUID->"f09e931f-233d-487b-9060-64f4251818ad"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[94313, 2532, 303, 6, 28, "Input",ExpressionUUID->"e628ff18-3b9d-4278-aaf8-f7b2df9c7025"],
+Cell[94619, 2540, 489, 10, 41, "Output",ExpressionUUID->"8f371a28-301f-4249-9dc5-d923362b5952"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[95145, 2555, 313, 6, 28, "Input",ExpressionUUID->"b30a0be7-4c8c-4a1e-b6e2-e6b25c48d03f"],
+Cell[95461, 2563, 489, 10, 41, "Output",ExpressionUUID->"edfc274e-3365-47cc-a7d9-7c82de5b54dd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[95987, 2578, 299, 6, 28, "Input",ExpressionUUID->"b549a011-93d7-435d-b442-290bd19aff0d"],
+Cell[96289, 2586, 5113, 107, 64, "Output",ExpressionUUID->"4331416e-838c-4cb1-9d44-05c3d617d972"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[101439, 2698, 237, 3, 28, "Input",ExpressionUUID->"dd061c0b-dcf0-483e-a656-7a6de7ace22b"],
+Cell[101679, 2703, 214, 3, 32, "Output",ExpressionUUID->"da0b720c-d6a2-4333-a76d-51d53d84934a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[101930, 2711, 239, 3, 28, "Input",ExpressionUUID->"0cde6e8d-9a81-437e-84a8-fa8d4a1bf4e0"],
+Cell[102172, 2716, 477, 8, 71, "Output",ExpressionUUID->"08219e2b-ca65-43ce-a766-b94cd9db1dfe"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
