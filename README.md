@@ -1,2 +1,2 @@
-# date-and-time-in-mathematica
+# date-and-time
 This repository contains date and time calculations.
